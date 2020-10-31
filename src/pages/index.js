@@ -13,10 +13,9 @@ export default function Home({ data }) {
       <Header headerText="Hello Gatsby!" />
       <p>What a world.</p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
-      <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
+      <h1>Hi! I'm building a fake Gatsby site as part of a learning effort!</h1>
       <p>
-        What do I like to do? Lots of course but definitely enjoy building
-        websites.
+        I'm not ready yet! Leave me alone :(
       </p>
       <PandaLayout>
         <div>

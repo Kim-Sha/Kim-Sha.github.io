@@ -1,8 +1,7 @@
 import Typography from "typography"
-// import fairyGateTheme from "typography-theme-fairy-gates"
-import kirkhamTheme from "typography-theme-kirkham"
+import noriegaTheme from "typography-theme-noriega"
 
-const typography = new Typography(kirkhamTheme)
+const typography = new Typography(noriegaTheme)
 
 // export const { scale, rhythm, options } = typography
 export const rhythm = typography.rhythm
