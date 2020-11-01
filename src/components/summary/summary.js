@@ -12,15 +12,15 @@ const Summary = ({ profile }) => (
         {profile.company}
       </h3>
       {profile.for_hire && (
-        <div className="font-header font-semibold text-xs uppercase pt-2">
+        <div className="font-header font-semibold text-xs lowercase pt-2">
           <span className="inline-block w-2 h-2 rounded-full mr-1 bg-green-500"></span>
-          Available for hire
+          ksha@ckmanalytix.com
         </div>
       )}
     </div>
     <div className="w-1/2 pl-4 lg:pl-12">
       <h5 className="font-header font-semibold text-front text-sm uppercase">
-        Focused on
+        Currently focused on
       </h5>
       <div className="font-header font-light text-2xl text-front leading-tight">
         {profile.focus}

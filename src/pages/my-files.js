@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import {PandaLayout} from "../components/layout"
+import {Layout} from "../components/layout"
 
 export default function MyFiles({ data }) {
   return (
-    <PandaLayout>
+    <Layout>
       <div>
         <h1>My Site's Files</h1>
         <table>
@@ -28,7 +28,7 @@ export default function MyFiles({ data }) {
           </tbody>
         </table>
       </div>
-    </PandaLayout>
+    </Layout>
   )
 }
 

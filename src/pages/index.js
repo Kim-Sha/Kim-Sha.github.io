@@ -8,11 +8,11 @@ import StructuredData from "../components/structured-data/structured-data"
 import Sidebar from "../components/sidebar/sidebar"
 import MainContent from "../components/body/body"
 import Footer from "../components/footer/footer"
-
+import "../styles/style.css"
 
 export default function Home({ data }) {
 
-  const { history, profile, projects, site, social } = data;
+  const { history, profile, projects, social } = data;
 
   return (
     <div className="antialiased bg-back leading-normal font-text text-front">

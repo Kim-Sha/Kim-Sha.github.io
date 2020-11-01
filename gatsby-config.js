@@ -23,6 +23,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss")(require("./src/utils/tailwind.config")("bright-orange")),
+          require("postcss-input-range"),
+          require("autoprefixer"),
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `GatsbyJS`,

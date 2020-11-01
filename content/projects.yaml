@@ -1,18 +1,32 @@
-- name: Example 1
-  url: https://github.com
-  description: Override the digital divide with additional clickthroughs from DevOps. User generated content in real-time will have multiple touchpoints for offshoring.
+- name: Kim-Sha.github.io
+  url: https://github.com/Kim-Sha/Kim-Sha.github.io
+  description: An initial foray into the world of static-website building using Gatsby. The end result is this personal website hosted on GitHub pages that I will use as a personal porfolio.
   status: in progress
   tags:
     - JavaScript
     - Gatsby
+    - React
+    - GraphQL
   icon: github
+  image: images/gatsby_logo.png
 
-- name: Example 2
-  url: https://github.com
-  description: Leverage agile frameworks to provide a robust synopsis for high level overviews.
+- name: DFFNN Binary Classifier
+  url: https://github.com/Kim-Sha/mlp-binary-classifier
+  description: Implemention of a generic deep feedforward neural network (DFFNN), or multi-layer perceptron (MLP), to tackle binary classification problems. Collated from a series of assignments from Andrew Ng's (deeplearning.ai ) Deep Learning Specialization. 
   status: live
   tags:
-    - JavaScript
-    - HTML
+    - Python
+    - Neural Networks
+  icon: github
+  image: images/dffnn.jpg
+
+- name: Senior Thesis
+  url: https://dataspace.princeton.edu/handle/88435/dsp019s161900s
+  description: Modelling the Performance of Near-Ultraviolet Organic Solar Cells Under Meteorologically Representative Spectral Irradiances.
+  status: live
+  tags:
+    - k-means clustering
+    - sci-kit learn
+    - pandas
   icon: website
-  image: images/project.jpg
+  image: images/thesis_map.png
