@@ -1,36 +1,39 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
+import { Helmet } from "react-helmet"
 
-function SEO({ description, lang, meta, title }) {
+const SEO = props => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
             description
-            author
+            locale
+            title
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const {
+    description = site.siteMetadata.description,
+    meta = [],
+    title = site.siteMetadata.title,
+  } = props
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: site.siteMetadata.locale,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:title`,
@@ -38,7 +41,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:type`,
@@ -49,33 +52,22 @@ function SEO({ description, lang, meta, title }) {
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
           name: `twitter:title`,
           content: title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description,
         },
       ].concat(meta)}
     />
   )
 }
 
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO

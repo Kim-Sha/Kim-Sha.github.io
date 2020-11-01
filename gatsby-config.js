@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots`,
+    title: `Kim Sha - Data Scientist`,
     description: `Experimental Gatsby Project`,
-    author:`Kim Sha`
+    author:`Kim Sha`,
+    locale: 'en'
   },
   plugins: [
     `gatsby-transformer-yaml`,
