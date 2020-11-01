@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import {PandaLayout} from "../components/layout"
 
 export default function MyFiles({ data }) {
-  console.log(data)
   return (
     <PandaLayout>
       <div>

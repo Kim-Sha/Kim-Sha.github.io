@@ -5,11 +5,12 @@ module.exports = {
     author:`Kim Sha`
   },
   plugins: [
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        name: `content`,
+        path: `${__dirname}/content/`,
       },
     },
     `gatsby-transformer-remark`,
@@ -31,10 +32,15 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/content/images/ksha_profile.png`, // This path is relative to the root of the site.
+        icon: `content/images/ksha_profile.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
