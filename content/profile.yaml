@@ -1,12 +1,12 @@
 - profile:
   initials: KS
-  name: John Doe
-  email: john.doe@change.me
-  profession: Web Developer
-  image: images/ksha_profile.jpg
+  name: Kim Sha
+  email: ksha485@gmail.com
+  profession: Data Scientist
+  image: images/ksha_profile.png
   location: New York, USA
   relocation: true
-  company: Atomic Studio
+  company: CKM Analytix
   for_hire: true
   focus: Learning Gatsby
   focus_url: https://gatsbyjs.org
