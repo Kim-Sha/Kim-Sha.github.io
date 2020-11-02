@@ -8,7 +8,7 @@ import ProjectTags from "./project-tags"
 const Project = props => {
   const { name, image, url, description, status, tags, icon } = props
   return (
-    <div className="border-t-4 border-line relative flex flex-wrap bg-back-light p-4 lg:p-8 bg-no-repeat text-sm mb-6">
+    <div className="rounded-lg shadow border-t-4 border-lead relative flex flex-wrap bg-lead-text p-4 lg:p-8 bg-no-repeat text-sm mb-6">
       {image && (
         <div className="w-full pb-4 lg:w-2/5 lg:pr-8 lg:pb-0">
           <Img fluid={image.childImageSharp.fluid} alt={name} />
