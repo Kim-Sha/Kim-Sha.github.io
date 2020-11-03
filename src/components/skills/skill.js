@@ -16,8 +16,8 @@ const Skill = ({ skill, i }) => {
   if (SkillIcon) {
     return (
       <div className="text-center text-back hover:text-front">
-        <SkillIcon className="m-2 w-24 h-24 text-front"/>
-        <h5 className="m-1">{skillIcons[skill][2]}</h5>
+        <SkillIcon className="m-2 w-16 h-16 md:w-24 md:h-24 text-front"/>
+        <p className="m-1 text-sm text-center w-20 md:text-base md:w-24">{skillIcons[skill][2]}</p>
       </div>
     )
   } else {
