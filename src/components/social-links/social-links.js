@@ -4,7 +4,7 @@ import { SocialType, arrayOf, shape } from "../../types"
 
 const SocialLinks = ({ social }) => {
   return (
-    <div className="pl-3">
+    <div className="pl-3" id='contact'>
       {social.map(({ name, url }, i) => {
         const colorsClass =
           i % 2 === 0 ? "bg-front text-back-light" : "bg-back-light text-front"

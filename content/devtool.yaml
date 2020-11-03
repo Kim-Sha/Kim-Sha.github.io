@@ -1,0 +1,29 @@
+- name: react
+  url: https://reactjs.org/
+
+- name: gatsby
+  url: https://www.gatsbyjs.com/
+
+- name: tailwind
+  url: https://tailwindcss.com/
+
+- name: github
+  url: https://pages.github.com/
+
+- name: graphql
+  url: https://graphql.org/
+
+- name: javascript
+  url:
+
+- name: typescript
+  url:
+
+- name: css
+  url:
+
+- name: python
+  url:
+
+- name: postgresql
+  url:

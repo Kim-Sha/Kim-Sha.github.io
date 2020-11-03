@@ -38,5 +38,5 @@
 }
 
 .history-entry:first-child .dot {
-  @apply .bg-lead;
+  @apply .bg-primary;
 }

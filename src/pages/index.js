@@ -12,7 +12,7 @@ import "../styles/style.css"
 
 export default function Home({ data }) {
 
-  const { history, profile, projects, social } = data;
+  const { history, profile, projects, devtool, social } = data;
 
   return (
     <div className="antialiased bg-back leading-normal font-text text-front">
@@ -31,7 +31,7 @@ export default function Home({ data }) {
         />
       </div>
 
-      <Footer name={profile.name}/>
+      <Footer name={profile.name} devtool={devtool.nodes}/>
     </div>
   )
 }
@@ -44,6 +44,11 @@ export const query = graphql`
     social: allSocialYaml(filter: { url: { ne: null } }) {
       nodes {
         ...SocialFragment
+      }
+    }
+    devtool: allDevtoolYaml(filter: { url: { ne: null } }) {
+      nodes {
+        ...DevtoolFragment
       }
     }
     history: allWorkHistoryYaml {

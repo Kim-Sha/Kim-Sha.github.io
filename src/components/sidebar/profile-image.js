@@ -9,7 +9,7 @@ const ProfileImage = ({ image, name }) => (
       alt={name}
       className="shadow rounded-full relative z-10"
     />
-    <div className="shadow-xl absolute inset-0 rounded-full bg-lead z-0 transform translate-x-12"></div>
+    <div className="shadow-xl absolute inset-0 rounded-full bg-primary z-0 transform translate-x-12"></div>
   </div>
 )
 

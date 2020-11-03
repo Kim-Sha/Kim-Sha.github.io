@@ -8,17 +8,17 @@
   relocation: true
   company: CKM Analytix
   for_hire: true
-  focus: My Life
+  focus: Not breaking this website
   focus_url: https://gatsbyjs.org
   about: |
     No wait! I'm not ready yet :(
   skills:
-    - Python
-    - Javascript / Typescript
-    - SQL
+    - python
+    - typescript
+    - postgresql
   tools:
     - Pandas
-    - D3 / Plotly
+    - D3 & Plotly
     - React
   budget:
     currency: $
