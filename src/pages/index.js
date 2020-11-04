@@ -21,7 +21,7 @@ export default function Home({ data }) {
       <StructuredData profile={profile} social={social.nodes} />
 
       <Header initials={profile.initials} />
-      <Landing name={profile.name} />
+      <Landing name={profile.name} social={social.nodes} />
 
       <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
         <Sidebar profile={profile} social={social.nodes} />
