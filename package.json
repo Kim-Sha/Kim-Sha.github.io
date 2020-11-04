@@ -35,6 +35,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
+    "react-text-loop": "^2.3.0",
     "react-typography": "^0.16.19",
     "tailwindcss": "^1.9.6",
     "typography": "^0.16.19",

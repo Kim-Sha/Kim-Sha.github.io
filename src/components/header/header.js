@@ -3,8 +3,8 @@ import { FaEnvelope } from "react-icons/fa"
 import { ProfileType } from "../../types"
 
 const Header = ({ initials }) => (
-  <header className="flex justify-between p-4 lg:px-8">
-    <span className="inline-flex w-14 h-14 lg:mt-4 font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full">
+  <header className="flex justify-between p-4 lg:px-8 bg-front">
+    <span className="inline-flex w-14 h-14 lg:mt-4 font-header font-bold text-xl justify-center items-center text-center text-primary border-2 border-solid border-primary rounded-full">
       {initials}
     </span>
     <a
