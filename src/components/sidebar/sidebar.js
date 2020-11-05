@@ -1,6 +1,8 @@
 import React from "react"
+import { Link } from "gatsby"
 import Location from "./location"
 import ProfileImage from "./profile-image"
+import { FaPenNib, FaHome } from "react-icons/fa"
 import { arrayOf, shape, ProfileType, SocialType } from "../../types"
 import SocialLinks from "../social-links/social-links"
 
@@ -24,6 +26,22 @@ const Sidebar = ({ profile, social }) => (
             relocation={profile.relocation}
           />
         )}
+        <br />
+
+        <div className="mb-3">
+          <Link to="/">
+            <FaHome className="inline-block h-8 w-8" />
+            <span className="hidden lg:inline-block pl-3">Home</span>
+          </Link>
+        </div>
+        
+        <div className="mb-3">
+          <Link to="/writing">
+            <FaPenNib className="inline-block h-8 w-8" />
+            <span className="hidden lg:inline-block pl-3">Writing</span>
+          </Link>
+        </div>
+
       </div>
 
       <div className="pt-8 pb-12 lg:py-0">
