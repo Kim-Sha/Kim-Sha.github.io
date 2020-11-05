@@ -1,10 +1,8 @@
 import React from "react"
-import Header from "../components/header/header"
 import { graphql } from "gatsby"
-// import { css } from "@emotion/core"
-// import { rhythm } from "../utils/typography"
 import SEO from "../components/seo/seo"
 import StructuredData from "../components/structured-data/structured-data"
+import Header from "../components/header/header"
 import Sidebar from "../components/sidebar/sidebar"
 import MainContent from "../components/body/body"
 import Footer from "../components/footer/footer"
@@ -12,7 +10,7 @@ import "../styles/style.css"
 
 export default function Home({ data }) {
 
-  const { history, profile, projects, devtool, social } = data;
+  const { history, profile, projects, blogs, devtool, social } = data;
 
   return (
     <div className="antialiased bg-back leading-normal font-text text-front">
@@ -28,6 +26,7 @@ export default function Home({ data }) {
           history={history.nodes}
           profile={profile}
           projects={projects.nodes}
+          blogs={blogs}
         />
       </div>
 
@@ -59,6 +58,22 @@ export const query = graphql`
     projects: allProjectsYaml {
       nodes {
         ...ProjectFragment
+      }
+    }
+    blogs: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
       }
     }
   }
