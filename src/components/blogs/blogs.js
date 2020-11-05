@@ -8,7 +8,7 @@ const Blogs = ({ blogs }) => (
     </h5>
     <h6>{blogs.totalCount} Posts</h6>
     {blogs.edges.map(({ node }) => (
-      <div key={node.id}>
+      <div className="prose" key={node.id}>
         <Link to={node.fields.slug}>
           <h3>
             {node.frontmatter.title}{" "}
