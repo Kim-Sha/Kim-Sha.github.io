@@ -5,7 +5,7 @@ import Skills from "../skills/skills"
 import Summary from "../summary/summary"
 import Tools from "../tools/tools"
 import WorkHistory from "../work-history/work-history"
-import Blogs from "../blogs/blogs"
+import Blogs from "../blog-loop/blog-loop"
 
 const MainContent = ({ history, projects, blogs, profile }) => {
   return (

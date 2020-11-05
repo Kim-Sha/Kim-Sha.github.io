@@ -1,6 +1,7 @@
 ---
 title: "Sweet Pandas Eating Sweets"
 date: "2017-08-10"
+description: "A Gatsby tutorial sample blog about them pandas"
 ---
 
 Pandas are really sweet.

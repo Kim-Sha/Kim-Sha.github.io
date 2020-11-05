@@ -1,21 +1,40 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "./layout"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   const { previous, next } = data
-  debugger;
 
   return (
     <Layout>
-      <article className="prose lg:w-2/3 lg:pl-8 xl:pl-12">
-          <header>
-            <h1 className="font-header font-black text-front text-5xl leading-none break-words mb-6">{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
-      </article>
+      <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
+        <article className="prose">
+            <header>
+              <h1>{post.frontmatter.title}</h1>
+              <p>{post.frontmatter.date}</p>
+            </header>
+            <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        </article>
+        <nav>
+          <ul className="flex justify-between">
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
+      </div>
     </Layout>
   )
 }
