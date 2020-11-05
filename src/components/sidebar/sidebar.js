@@ -1,10 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import Location from "./location"
 import ProfileImage from "./profile-image"
-import { FaPenNib, FaHome } from "react-icons/fa"
 import { arrayOf, shape, ProfileType, SocialType } from "../../types"
 import SocialLinks from "../social-links/social-links"
+import NavLinks from "../nav-links/nav-links"
 
 const Sidebar = ({ profile, social }) => (
   <aside className="w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12">
@@ -27,21 +26,7 @@ const Sidebar = ({ profile, social }) => (
           />
         )}
         <br />
-
-        <div className="mb-3">
-          <Link to="/">
-            <FaHome className="inline-block h-8 w-8" />
-            <span className="hidden lg:inline-block pl-3">Home</span>
-          </Link>
-        </div>
-        
-        <div className="mb-3 content-center">
-          <Link to="/writing">
-            <FaPenNib className="inline-block h-8 w-8" />
-            <span className="hidden lg:inline-block pl-3">Writing</span>
-          </Link>
-        </div>
-
+        <NavLinks />
       </div>
 
       <div className="pt-8 pb-12 lg:py-0">
