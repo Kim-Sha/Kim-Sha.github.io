@@ -35,7 +35,7 @@ const Sidebar = ({ profile, social }) => (
           </Link>
         </div>
         
-        <div className="mb-3">
+        <div className="mb-3 content-center">
           <Link to="/writing">
             <FaPenNib className="inline-block h-8 w-8" />
             <span className="hidden lg:inline-block pl-3">Writing</span>
