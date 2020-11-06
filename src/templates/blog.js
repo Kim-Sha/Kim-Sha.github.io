@@ -1,9 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "./layout"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default function BlogPost({ data }) {
-  const post = data.markdownRemark
+  const post = data.mdx
   const { previous, next } = data
 
   return (
@@ -14,7 +15,7 @@ export default function BlogPost({ data }) {
               <h1>{post.frontmatter.title}</h1>
               <p>{post.frontmatter.date}</p>
             </header>
-            <section dangerouslySetInnerHTML={{ __html: post.html }} />
+            <MDXRenderer>{post.body}</MDXRenderer>
         </article>
         <nav>
           <ul className="flex justify-between">
@@ -50,17 +51,17 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }) {
       fields {
         slug
       }
@@ -68,7 +69,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }) {
       fields {
         slug
       }

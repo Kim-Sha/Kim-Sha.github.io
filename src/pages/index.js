@@ -34,7 +34,7 @@ export const query = graphql`
         ...ProjectFragment
       }
     }
-    blogs: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogs: allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {

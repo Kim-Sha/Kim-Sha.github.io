@@ -34,7 +34,7 @@ export default function Writing({ data }) {
 
 export const query = graphql`
   query {
-    blogs: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogs: allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
