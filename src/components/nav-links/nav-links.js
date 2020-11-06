@@ -4,20 +4,20 @@ import { FaPenNib, FaHome } from "react-icons/fa"
 
 const NavLinks = () => {
     return (
-        <div>
-            <div className="mb-3">
+        <div className="flex lg:flex-col">
+            <div className="lg:mb-3 ml-2">
                 <Link to="/">
                     <FaHome className="inline-block h-8 w-8" />
-                    <span className="hidden lg:inline-block pl-3">Home</span>
+                    <span className="hidden lg:inline-block pl-2">Home</span>
                 </Link>
             </div> 
-        <div className="mb-3">
-            <Link to="/writing">
-                <FaPenNib className="inline-block h-8 w-8" />
-                <span className="hidden lg:inline-block pl-3">Writing</span>
-            </Link>
-        </div>
-    </div>    
+            <div className="lg:mb-3 ml-2">
+                <Link to="/writing">
+                    <FaPenNib className="inline-block h-8 w-8" />
+                    <span className="hidden lg:inline-block pl-3">Writing</span>
+                </Link>
+            </div>
+        </div>    
     )
 }
 
