@@ -5,8 +5,9 @@ import Skills from "../skills/skills"
 import Summary from "../summary/summary"
 import Tools from "../tools/tools"
 import WorkHistory from "../work-history/work-history"
+import Blogs from "../blog-loop/blog-loop"
 
-const MainContent = ({ history, projects, profile }) => {
+const MainContent = ({ history, projects, blogs, profile }) => {
   return (
     <main className="lg:w-2/3 lg:pl-8 xl:pl-12">
       <Summary profile={profile} />
@@ -21,6 +22,7 @@ const MainContent = ({ history, projects, profile }) => {
       </div>
 
       {profile.about && <About about={profile.about} />}
+      <Blogs blogs={blogs}/>
       <Projects projects={projects} />
       <WorkHistory history={history} />
     </main>

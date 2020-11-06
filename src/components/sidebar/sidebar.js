@@ -3,6 +3,7 @@ import Location from "./location"
 import ProfileImage from "./profile-image"
 import { arrayOf, shape, ProfileType, SocialType } from "../../types"
 import SocialLinks from "../social-links/social-links"
+import NavLinks from "../nav-links/nav-links"
 
 const Sidebar = ({ profile, social }) => (
   <aside className="w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12">
@@ -24,6 +25,8 @@ const Sidebar = ({ profile, social }) => (
             relocation={profile.relocation}
           />
         )}
+        <br />
+        <NavLinks />
       </div>
 
       <div className="pt-8 pb-12 lg:py-0">
