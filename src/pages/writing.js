@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../templates/layout"
+import ProjectTags from "../components/projects/project-tags"
 
 export default function Writing({ data }) {
 
@@ -15,17 +16,22 @@ export default function Writing({ data }) {
         </header>
         
         {blogs.edges.map(({ node }) => (
-          <Link to={node.fields.slug}>
-            <div className="prose mb-6" key={node.id}>
-              <h3>
-                {node.frontmatter.title}{" "}
-                <span className="italic text-base text-front">
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
-              <p>{node.frontmatter.description ? node.frontmatter.description : node.excerpt}</p>
-            </div>
-          </Link>
+          <div>
+            <Link to={node.fields.slug}>
+              <div className="prose" key={node.id}>
+                <h4>
+                  {node.frontmatter.title}{" "}
+                  <span className="italic text-sm text-front">
+                    — {node.frontmatter.date}
+                  </span>
+                </h4>
+                <p className="text-sm">{node.frontmatter.description ? node.frontmatter.description : node.excerpt}</p>
+              </div>
+            </Link>
+            <ul className="pr-2 mb-6 italic">
+              {node.frontmatter.tags && <ProjectTags tags={node.frontmatter.tags} />}
+            </ul>
+          </div>
           ))}
       </div>
     </Layout>
@@ -43,6 +49,7 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             description
+            tags
           }
           fields {
             slug

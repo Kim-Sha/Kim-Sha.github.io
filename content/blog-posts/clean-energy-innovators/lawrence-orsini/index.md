@@ -2,6 +2,7 @@
 title: Lawrence Orsini - Founder & CEO, LO3 Energy
 date: "2018-07-02"
 description: "Clean Energy Innovators - microgrid technology"
+tags: ["Clean Energy Innovators", "Microgrids"]
 ---
 
 ![](./lo3energy.jpg)

@@ -13,7 +13,7 @@ export default function BlogPost({ data }) {
     <Layout>
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         <article className="prose mb-6">
-          <button className="text-front opacity-25 fixed invisible lg:visible bottom-0 right-0 p-6 focus:outline-none" onClick={() => scrollTo('#blog-header')}>
+          <button className="fixed invisible lg:visible bottom-0 right-0 p-6 focus:outline-none text-front opacity-25 hover:opacity-100" onClick={() => scrollTo('#blog-header')}>
             <FaAngleUp className="w-10 h-10"/>
           </button>
           <header id="blog-header">
