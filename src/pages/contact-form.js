@@ -3,29 +3,28 @@ import Layout from "../templates/layout"
 import { ProfileType } from "../types"
 
 
-const Contact = ({ email }) => {
+const Contact = () => {
 
   return (
     <Layout>
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         
         <header className="prose mb-6">
-          <h1 className="prose">Get in Touch</h1>
+          <h1 className="prose">Get in touch</h1>
         </header>
 
-        <form className="w-full max-w-lg" method="post" action={`https://formspree.io/${email}`}>
+        <form className="w-full max-w-lg" method="post" action={`https://formspree.io/f/xzbkgqrd`}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label for="grid-first-name">
-                <p className="block uppercase tracking-wide text-front text-xs font-bold mb-2">First Name</p>
-                <input className="appearance-none block w-full bg-back-secondary text-front border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane"/>
+                <p className="block uppercase tracking-wide text-front text-xs font-bold mb-2">First Name*</p>
+                <input required className="appearance-none block w-full bg-back-secondary text-front border border-back-secondary rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" name="first-name"/>
               </label>
-              <p className="text-red-500 text-xs italic">Please fill out this field.</p>
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label for="grid-last-name">
                 <p className="block uppercase tracking-wide text-front text-xs font-bold mb-2">Last Name</p>
-                <input className="appearance-none block w-full bg-back-secondary text-front border border-back-secondary rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe"/>
+                <input className="appearance-none block w-full bg-back-secondary text-front border border-back-secondary rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" name="last-name"/>
               </label>
               
             </div>
@@ -36,20 +35,20 @@ const Contact = ({ email }) => {
                 <p className="block uppercase tracking-wide text-front text-xs font-bold mb-2">E-mail</p>
                 <input className="appearance-none block w-full bg-back-secondary text-front border border-back-secondary rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" name="_replyto"/>
               </label>
+              <p className="text-gray-600 text-xs italic">If necessary, please provide contact information so that I may get back to you.</p>
             </div>
           </div>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3">
               <label for="message">
-                <p className="block uppercase tracking-wide text-front text-xs font-bold mb-2">Message</p>
-                <textarea className=" no-resize appearance-none block w-full bg-back-secondary text-front border border-back-secondary rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+                <p className="block uppercase tracking-wide text-front text-xs font-bold mb-2">Message*</p>
+                <textarea required className=" no-resize appearance-none block w-full bg-back-secondary text-front border border-back-secondary rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message" name="message"></textarea>
               </label>
-              <p className="text-gray-600 text-xs italic">If necessary, please provide contact information so that I may get back to you.</p>
             </div>
           </div>
           <div className="md:flex md:items-center">
             <div className="md:w-1/3">
-              <button className="shadow bg-primary hover:bg-primary focus:shadow-outline focus:outline-none test-primary-text font-bold py-2 px-4 rounded" type="button">
+              <button className="shadow bg-primary hover:bg-primary focus:shadow-outline focus:outline-none test-primary-text font-bold py-2 px-4 rounded" type="submit">
                 Send
               </button>
             </div>
