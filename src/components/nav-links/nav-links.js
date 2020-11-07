@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaPenNib, FaHome } from "react-icons/fa"
+import { FaPenNib, FaHome, FaEnvelope} from "react-icons/fa"
 
 const NavLinks = () => {
     return (
@@ -15,6 +15,12 @@ const NavLinks = () => {
                 <Link to="/writing">
                     <FaPenNib className="inline-block h-8 w-8" />
                     <span className="hidden lg:inline-block pl-3">Writing</span>
+                </Link>
+            </div>
+            <div className="lg:mb-3 ml-2">
+                <Link to="/contact-form">
+                    <FaEnvelope className="inline-block h-8 w-8" />
+                    <span className="hidden lg:inline-block pl-3">Contact</span>
                 </Link>
             </div>
         </div>    
