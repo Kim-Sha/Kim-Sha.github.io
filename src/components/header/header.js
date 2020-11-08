@@ -10,7 +10,7 @@ const Header = ({ initials }) => {
 
   return (
     <header className="p-4 bg-none sticky lg:static top-0 z-40 space-y-0">
-      <div className={`${toggle ? 'rounded-b-none' : null} rounded-lg bg-front flex justify-between p-4 lg:px-8`}>
+      <div className={`${toggle ? 'rounded-b-none' : null} rounded-lg bg-front lg:bg-back flex justify-between p-4 lg:px-8`}>
         <button onClick={() => setToggle(!toggle)} onKeyDown={() => setToggle(!toggle)} className="lg:hidden focus:outline-none">
           <HiMenuAlt2 className={`${toggle ? 'text-primary' : 'text-back'} w-8 h-8`}/>
         </button>
