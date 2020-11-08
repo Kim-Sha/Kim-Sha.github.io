@@ -6,7 +6,7 @@ import SocialLinks from "../social-links/social-links"
 import NavLinks from "../nav-links/nav-links"
 
 const Sidebar = ({ profile, social }) => (
-  <aside className="hidden lg:block w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12">
+  <aside className="lg:block w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12">
     <div className="flex flex-col h-full justify-between">
       <div>
         <h2 className="font-header font-light text-front text-2xl leading-none mb-4">
@@ -25,7 +25,6 @@ const Sidebar = ({ profile, social }) => (
             relocation={profile.relocation}
           />
         )}
-        <br />
         <NavLinks />
       </div>
 

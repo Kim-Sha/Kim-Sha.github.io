@@ -1,14 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../templates/layout"
+import Sidebar from "../components/sidebar/sidebar"
 import MainContent from "../components/body/body"
 
 export default function Home({ data }) {
 
-  const { history, profile, projects, blogs } = data;
+  const { history, social, profile, projects, blogs } = data;
 
   return (
     <Layout>
+        <Sidebar profile={profile} social={social.nodes} />
         <MainContent
           history={history.nodes}
           profile={profile}
@@ -23,6 +25,11 @@ export const query = graphql`
   query {
     profile: profileYaml {
       ...ProfileFragment
+    }
+    social: allSocialYaml(filter: { url: { ne: null } }) {
+      nodes {
+        ...SocialFragment
+      }
     }
     history: allWorkHistoryYaml {
       nodes {

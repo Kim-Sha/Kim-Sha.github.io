@@ -4,7 +4,7 @@ import { FaPenNib, FaHome, FaEnvelope} from "react-icons/fa"
 
 const NavLinks = () => {
     return (
-        <div className="flex lg:flex-col">
+        <div className="hidden lg:block lg:flex-col pt-8">
             <div className="lg:mb-3 ml-2">
                 <Link to="/" className="hover:opacity-75">
                     <FaHome className="inline-block h-8 w-8" />
