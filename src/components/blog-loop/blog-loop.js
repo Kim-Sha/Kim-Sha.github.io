@@ -9,10 +9,10 @@ const Blogs = ({ blogs }) => (
       <TextLoop interval={5000}>
         {blogs.edges.map(({ node }) => (
           <Link to={node.fields.slug}>
-            <div className="prose lg:pl-2 text-xs lg:text-base w-64 lg:w-full truncate" key={node.id}>
+            <div className="prose lg:pl-2 text-xs lg:text-base w-64 md:w-full" key={node.id}>
               <h3 className="truncate ...">
                 {node.frontmatter.title}{" "}
-                <span className="italic text-xs lg:text-base text-front">
+                <span className="text-xs lg:text-base text-front">
                   — {node.frontmatter.date}
                 </span>
               </h3>
