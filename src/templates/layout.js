@@ -3,10 +3,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo/seo"
 import StructuredData from "../components/structured-data/structured-data"
 import Header from "../components/header/header"
+import Sidebar from "../components/sidebar/sidebar"
 import Footer from "../components/footer/footer"
 import "../styles/style.css"
 
-export default function Layout({ children }) {
+export default function Layout({ children, sidebarOnMobile }) {
 
   const { profile, devtool, social } = useStaticQuery(
     graphql`
@@ -35,6 +36,7 @@ export default function Layout({ children }) {
       <Header initials={profile.initials} />
 
       <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
+        <Sidebar sidebarOnMobile={sidebarOnMobile} profile={profile} social={social.nodes} />
         {children}
       </div>
 
