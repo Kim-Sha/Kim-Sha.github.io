@@ -6,7 +6,7 @@ import { ProfileType } from "../types"
 const Contact = () => {
 
   return (
-    <Layout>
+    <Layout sidebarOnMobile={false}>
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         
         <header className="prose mb-6">
