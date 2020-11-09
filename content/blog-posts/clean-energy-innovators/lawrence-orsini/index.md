@@ -1,9 +1,15 @@
 ---
 title: Lawrence Orsini - Founder & CEO, LO3 Energy
 date: "2018-07-02"
-description: "Clean Energy Innovators - microgrid technology"
+description: "Clean Energy Innovators Series, Part 1"
 tags: ["Clean Energy Innovators", "Microgrids"]
 ---
+*This is part 1 of a series of character profiles on clean energy innovators.
+I wrote these as an intern at the Environmental Defense Fund to support
+an extraordinary mentor, [Dick Munson](https://medium.com/@dickmunson), in 
+unmasking some of the unsung pioneers fighting climate change. I'll be posting 
+my original research here, but you can find the final product on
+[medium](https://medium.com/the-fourth-wave/meet-the-innovators-battling-climate-change-d23b04642d0f).*
 
 ![](./lo3energy.jpg)
 
