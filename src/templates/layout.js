@@ -35,7 +35,7 @@ export default function Layout({ children, sidebarOnMobile }) {
 
       <Header initials={profile.initials} />
 
-      <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
+      <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap my-4">
         <Sidebar sidebarOnMobile={sidebarOnMobile} profile={profile} social={social.nodes} />
         {children}
       </div>
