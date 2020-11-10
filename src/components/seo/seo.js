@@ -60,8 +60,8 @@ const SEO = props => {
           content: description,
         },
         {
-          name: "google-site-verification",
-          content: "v1thc2SFLEi2YwH-_l7ggx2aiLimiADX21JbgkHdXNc"
+          name: `google-site-verification`,
+          content: `v1thc2SFLEi2YwH-_l7ggx2aiLimiADX21JbgkHdXNc`
         }
       ].concat(meta)}
     />
