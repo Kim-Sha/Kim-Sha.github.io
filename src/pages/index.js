@@ -8,7 +8,7 @@ export default function Home({ data }) {
   const { history, profile, projects, blogs } = data;
 
   return (
-    <Layout sidebarOnMobile={true}>
+    <Layout sidebarOnMobile={true} title="Profile">
         <MainContent
           history={history.nodes}
           profile={profile}

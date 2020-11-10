@@ -43,7 +43,7 @@ export default function Writing({ data }) {
   const posts = hasSearchResults ? filteredData : blogs.edges
 
   return (
-    <Layout sidebarOnMobile={false} title="Writing">
+    <Layout sidebarOnMobile={false} title="Writing" pathname="/writing">
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         
         <header className="prose mb-6">

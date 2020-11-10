@@ -17,7 +17,7 @@ export default function BlogPost({ data }) {
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
       image={image}
-      pathname={this.props.location.pathname}
+      pathname={post.fields.slug}
       >
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         <article className="prose mb-6">
@@ -65,6 +65,9 @@ export const pageQuery = graphql`
       }
     }
     mdx(id: { eq: $id }) {
+      fields {
+        slug
+      }
       id
       excerpt(pruneLength: 160)
       body

@@ -21,6 +21,7 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const additionalMeta = meta ? meta : []
   const image =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
@@ -105,7 +106,7 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
               },
             ]
       )
-      .concat(meta)}
+      .concat(additionalMeta)}
     />
   )
 }
