@@ -26,6 +26,7 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
+  const metaTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
@@ -33,8 +34,7 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
       htmlAttributes={{
         lang: site.siteMetadata.locale,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={metaTitle}
       link={
         canonical
           ? [
@@ -52,7 +52,7 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
@@ -68,7 +68,7 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,

@@ -2,10 +2,13 @@ import React from "react"
 import Layout from "../templates/layout"
 import { ProfileType } from "../types"
 
-const Contact = () => {
+const Contact = (data) => {
+
+  const profile = data.data.profile;
+  const image = profile.image.childImageSharp.fixed
 
   return (
-    <Layout sidebarOnMobile={false} title="Contact" pathname="/contact-form" >
+    <Layout sidebarOnMobile={false} title="Contact" image={image} pathname="/contact-form" >
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         
         <header className="prose mb-6">
@@ -64,3 +67,11 @@ Contact.propTypes = {
 }
 
 export default Contact
+
+export const query = graphql`
+  query {
+    profile: profileYaml {
+      ...ProfileFragment
+    }
+  }
+`

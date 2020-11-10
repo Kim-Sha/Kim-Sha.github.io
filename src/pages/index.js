@@ -1,14 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../templates/layout"
-import MainContent from "../components/body/body"
+import MainContent from "../components/main-content/main-content"
 
 export default function Home({ data }) {
 
   const { history, profile, projects, blogs } = data;
+  const image = profile.image.childImageSharp.fixed
 
   return (
-    <Layout sidebarOnMobile={true} title="Profile">
+    <Layout sidebarOnMobile={true} image={image}>
         <MainContent
           history={history.nodes}
           profile={profile}
