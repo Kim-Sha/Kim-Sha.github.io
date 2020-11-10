@@ -5,7 +5,7 @@ import { ProfileType } from "../types"
 const Contact = () => {
 
   return (
-    <Layout sidebarOnMobile={false}>
+    <Layout sidebarOnMobile={false} title="Contact" pathname="/contact-form" >
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         
         <header className="prose mb-6">

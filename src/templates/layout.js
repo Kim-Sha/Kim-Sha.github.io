@@ -7,7 +7,7 @@ import Sidebar from "../components/sidebar/sidebar"
 import Footer from "../components/footer/footer"
 import "../styles/style.css"
 
-export default function Layout({ children, sidebarOnMobile }) {
+export default function Layout({ children, sidebarOnMobile, description, meta, image, title, pathname }) {
 
   const { profile, devtool, social } = useStaticQuery(
     graphql`
@@ -30,7 +30,7 @@ export default function Layout({ children, sidebarOnMobile }) {
 
   return (
     <div className="antialiased bg-back leading-normal font-text text-front">
-      <SEO />
+      <SEO description={description} meta={meta} image={image} title={title} pathname={pathname}/>
       <StructuredData profile={profile} social={social.nodes} />
 
       <Header initials={profile.initials} />

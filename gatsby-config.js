@@ -5,9 +5,10 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Kim Sha - Data Scientist`,
-    description: `Experimental Gatsby Project`,
+    description: `Princeton CBE'19 | I write about web development, machine learning, and data science in the context of sustainability and renewable energy.`,
     author:`Kim Sha`,
-    locale: 'en'
+    locale: 'en',
+    siteUrl: 'https://kim-sha.github.io/'
   },
   plugins: [
     `gatsby-transformer-yaml`,
