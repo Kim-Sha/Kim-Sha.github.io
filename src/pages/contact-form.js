@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../templates/layout"
 import { ProfileType } from "../types"
 
-
 const Contact = () => {
 
   return (
@@ -13,7 +12,7 @@ const Contact = () => {
           <h1 className="prose">Get in touch</h1>
         </header>
 
-        <form className="w-full max-w-lg" method="post" action={`https://formspree.io/f/xzbkgqrd`}>
+        <form className="w-full max-w-lg" method="post" action={`https://formspree.io/f/${process.env.FORM_ENDPOINT}`}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label for="grid-first-name">
