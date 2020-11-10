@@ -8,9 +8,17 @@ import { FaAngleUp } from "react-icons/fa"
 export default function BlogPost({ data }) {
   const post = data.mdx
   const { previous, next } = data
+  const image = post.frontmatter.image
+    ? post.frontmatter.image.childImageSharp.resize
+    : null
 
   return (
-    <Layout>
+    <Layout
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+      image={image}
+      pathname={this.props.location.pathname}
+      >
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         <article className="prose mb-6">
           <button className="fixed invisible lg:visible bottom-0 right-0 p-6 focus:outline-none text-front opacity-25 hover:opacity-100" onClick={() => scrollTo('#blog-header')}>
@@ -64,6 +72,15 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        image: featured {
+          childImageSharp {
+            resize(width: 1200) {
+              src
+              height
+              width
+            }
+          }
+        }
       }
     }
     previous: mdx(id: { eq: $previousPostId }) {
