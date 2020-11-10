@@ -59,6 +59,10 @@ const SEO = props => {
           name: `twitter:description`,
           content: description,
         },
+        {
+          name: "google-site-verification",
+          content: "v1thc2SFLEi2YwH-_l7ggx2aiLimiADX21JbgkHdXNc"
+        }
       ].concat(meta)}
     />
   )
