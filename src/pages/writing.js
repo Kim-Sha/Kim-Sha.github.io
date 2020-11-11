@@ -41,7 +41,7 @@ export default function Writing({ data }) {
   const { filteredData, query } = state
   const hasSearchResults = filteredData && (query !== emptyQuery)
   const posts = hasSearchResults ? filteredData : blogs.edges
-  const image = profile.image.childImageSharp.fixed
+  const image = profile.seo_image ? profile.seo_image.childImageSharp.resize : null
 
   return (
     <Layout sidebarOnMobile={false} title="Writing" image={image} pathname="/writing">

@@ -5,7 +5,7 @@ import { ProfileType } from "../types"
 const Contact = (data) => {
 
   const profile = data.data.profile;
-  const image = profile.image.childImageSharp.fixed
+  const image = profile.seo_image ? profile.seo_image.childImageSharp.resize : null
 
   return (
     <Layout sidebarOnMobile={false} title="Contact" image={image} pathname="/contact-form" >

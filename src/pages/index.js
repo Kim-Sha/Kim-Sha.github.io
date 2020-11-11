@@ -6,7 +6,7 @@ import MainContent from "../components/main-content/main-content"
 export default function Home({ data }) {
 
   const { history, profile, projects, blogs } = data;
-  const image = profile.image.childImageSharp.fixed
+  const image = profile.seo_image ? profile.seo_image.childImageSharp.resize : null
 
   return (
     <Layout sidebarOnMobile={true} image={image}>

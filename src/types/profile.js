@@ -18,6 +18,10 @@ export const ProfileType = {
     childImageSharp: object.isRequired,
     publicURL: string.isRequired,
   }),
+  seo_image: shape({
+    childImageSharp: object.isRequired,
+    publicURL: string.isRequired
+  }),
   initials: string.isRequired,
   location: string.isRequired,
   name: string.isRequired,
@@ -45,6 +49,16 @@ export const query = graphql`
       childImageSharp {
         fixed(width: 144, height: 144, quality: 85) {
           ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+      publicURL
+    }
+    seo_image {
+      childImageSharp {
+        resize(width: 1200) {
+          src
+          height
+          width
         }
       }
       publicURL
