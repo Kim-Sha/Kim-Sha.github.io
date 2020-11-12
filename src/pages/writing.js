@@ -52,12 +52,12 @@ export default function Writing({ data }) {
         </header>
 
         <div className="mb-6">
-          <div class="bg-back-secondary flex items-center rounded-md shadow w-full lg:w-3/5 h-10">
-            <input class="bg-back-secondary rounded-l-full w-full h-full py-4 px-6 leading-tight focus:outline-none"
+          <div class="bg-back-2 text-front-text flex items-center rounded-md shadow w-full lg:w-3/5 h-10">
+            <input class="bg-back-2 rounded-l-full w-full h-full py-4 px-6 leading-tight focus:outline-none"
                    id="search" type="text" placeholder="Search" onChange={handleSearchInput}/>
 
             <div class="p-4">
-              <button class="bg-primary text-back-secondary rounded-full p-2 hover:bg-opacity-75 focus:outline-none w-full h-full flex items-center justify-center">
+              <button class="bg-front-2 text-back-2 rounded-full p-2 hover:bg-opacity-75 focus:outline-none w-full h-full flex items-center justify-center">
                 <FaSearch />
               </button>
             </div>
@@ -70,7 +70,7 @@ export default function Writing({ data }) {
               <div className="prose" key={node.id}>
                 <h4>
                   {node.frontmatter.title}{" "}
-                  <span className="italic text-sm text-front">
+                  <span className="italic text-sm text-front-text">
                     — {node.frontmatter.date}
                   </span>
                 </h4>

@@ -34,9 +34,9 @@
 
 /* Different colors on the first item */
 .history-entry:first-child .dot-bg {
-  @apply .bg-front;
+  @apply .bg-back-3;
 }
 
 .history-entry:first-child .dot {
-  @apply .bg-primary;
+  @apply .bg-front-2;
 }
