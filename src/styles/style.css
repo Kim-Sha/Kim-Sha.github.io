@@ -28,6 +28,15 @@
     /* text inside back-3 */
     --front-text-3: #FEFEFA; /* baby powder white */
 
+    /* PROSE COLORS */
+    --prose: #edf2f7;
+    --prose-bold: #FEFEFA;
+    --prose-head: #FEFEFA;
+    --prose-link: #F4C430;
+    --prose-blockquote: #edf2f7;
+    --prose-code: #F4C430;
+    --prose-blurb: #F4C430;
+
     /* Outlines / borders */
     --line: #d5d5ce; /* light gray */
 }
@@ -55,6 +64,15 @@
     --front-text-2: #343d52; /* space gray */
     /* text inside back-3 */
     --front-text-3: #FEFEFA; /* baby powder white */
+
+    /* PROSE COLORS */
+    --prose: #343d52;
+    --prose-bold: #1a202c;
+    --prose-head: #1a202c;
+    --prose-link: #343d52;
+    --prose-blockquote: #343d52;
+    --prose-code: #343d52;
+    --prose-blurb: #343d52;
 
     /* Outlines / borders */
     --line: #d5d5ce; /* light gray */

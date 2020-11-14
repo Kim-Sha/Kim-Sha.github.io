@@ -32,6 +32,14 @@ module.exports = theme => {
           'front-text-2': "var(--front-text-2)",
           'front-text-3': 'var(--front-text-3)',
 
+          'prose': 'var(--prose)',
+          'prose-bold': 'var(--prose-bold)',
+          'prose-head': 'var(--prose-head)',
+          'prose-link': 'var(--prose-link)',
+          'prose-blockquote': 'var(--prose-blockquote)',
+          'prose-code': 'var(--prose-code)',
+          'prose-blurb': 'var(--prose-blurb)',
+
           'line': 'var(--line)',
         },
         borderRadius: {
@@ -41,52 +49,52 @@ module.exports = theme => {
           "14": "3.5rem",
         },
       },
-      typography: (theme) => {darkMode?({
+      typography: (theme) => ({
           default: {
             css: {
-              color: theme('colors.front-text'),
+              color: theme('colors.prose'),
               strong: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-bold')
               },
               h1: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-head')
               },
               h2: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-head')
               },
               h3: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-head')
               },
               h4: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-head')
               },
               h5: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-head')
               },
               h6: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-head')
               },
               a: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-link')
               },
               blockquote: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-blockquote')
               },
               code: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose-code')
               },
               thead: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose')
               },
               hr: {
-                color: theme('colors.front-text-3')
+                color: theme('colors.prose')
               },
               '[class~="lead"]': {
-                  color: theme('colors.front-text-3')
+                  color: theme('colors.prose-blurb')
               },
             }
           }
-        }):null}
+        })
     },
     plugins: [
       require('@tailwindcss/typography')
