@@ -1,9 +1,3 @@
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-
 .dark {
     /* Background colors */
     /* Main body */
@@ -35,7 +29,7 @@
     --prose-link: #F4C430;
     --prose-blockquote: #F4C430;
     --prose-code: #F4C430;
-    --prose-blurb: #F4C430;
+    --prose-lead: #F4C430;
 
     /* Outlines / borders */
     --line: #d5d5ce; /* light gray */
@@ -72,8 +66,14 @@
     --prose-link: #1a202c;
     --prose-blockquote: #1a202c;
     --prose-code: #1a202c;
-    --prose-blurb: #1a202c;
+    --prose-lead: #1a202c;
 
     /* Outlines / borders */
     --line: #d5d5ce; /* light gray */
 }
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

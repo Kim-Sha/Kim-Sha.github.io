@@ -1,9 +1,4 @@
-const color = require("color")
-
-module.exports = theme => {
-  const colors =
-    typeof theme === "string" ? require(`../themes/${theme}`) : theme
-  const darkMode = theme === "ksha-dark"
+module.exports = () => {
 
   return {
     purge: {
@@ -38,7 +33,7 @@ module.exports = theme => {
           'prose-link': 'var(--prose-link)',
           'prose-blockquote': 'var(--prose-blockquote)',
           'prose-code': 'var(--prose-code)',
-          'prose-blurb': 'var(--prose-blurb)',
+          'prose-lead': 'var(--prose-lead)',
 
           'line': 'var(--line)',
         },
@@ -90,7 +85,7 @@ module.exports = theme => {
                 color: theme('colors.prose')
               },
               '[class~="lead"]': {
-                  color: theme('colors.prose-blurb')
+                  color: theme('colors.prose-lead')
               },
             }
           }
