@@ -1,3 +1,77 @@
+.dark {
+    /* Background colors */
+    /* Main body */
+    --back: #343d52; /* space gray */
+    /* Cards */
+    --back-2: #1a202c; /* dark space gray */
+    /* Header / Footer etc. */
+    --back-3: #1a202c; /* dark space gray */
+    
+    /* Accents */
+    --front: #edf2f7; /* faint blue gray */
+    --front-2: #F4C430; /* saffron orange */
+    /* accent inside back-3 */
+    --front-3: #FEFEFA; /* baby powder white */
+    --front-4: #858b97; /* light space gray */
+
+    /* TEXT COLORS */
+    /* Main body text */
+    --front-text: #edf2f7; /* faint blue gray */
+    /* text inside front-2 */
+    --front-text-2: #343d52; /* space gray */
+    /* text inside back-3 */
+    --front-text-3: #FEFEFA; /* baby powder white */
+
+    /* PROSE COLORS */
+    --prose: #edf2f7;
+    --prose-bold: #FEFEFA;
+    --prose-head: #FEFEFA;
+    --prose-link: #F4C430;
+    --prose-blockquote: #F4C430;
+    --prose-code: #F4C430;
+    --prose-lead: #F4C430;
+
+    /* Outlines / borders */
+    --line: #d5d5ce; /* light gray */
+}
+
+.light {
+    /* Background colors */
+    /* Main body */
+    --back: #edf2f7; /* faint blue gray */
+    /* Cards */
+    --back-2: #FEFEFA; /* baby powder white */
+    /* Header / Footer etc. */
+    --back-3: #343d52; /* space gray */
+    
+    /* Accents */
+    --front: #343d52; /* space gray */
+    --front-2: #F4C430; /* saffron orange */
+    /* accent inside back-3 */
+    --front-3: #FEFEFA; /* baby powder white */
+    --front-4: #858b97; /* light space gray */
+
+    /* TEXT COLORS */
+    /* Main body text */
+    --front-text: #343d52; /* space gray */
+    /* text inside front-2 */
+    --front-text-2: #343d52; /* space gray */
+    /* text inside back-3 */
+    --front-text-3: #FEFEFA; /* baby powder white */
+
+    /* PROSE COLORS */
+    --prose: #343d52;
+    --prose-bold: #1a202c;
+    --prose-head: #1a202c;
+    --prose-link: #1a202c;
+    --prose-blockquote: #1a202c;
+    --prose-code: #1a202c;
+    --prose-lead: #1a202c;
+
+    /* Outlines / borders */
+    --line: #d5d5ce; /* light gray */
+}
+
 @tailwind base;
 
 @tailwind components;

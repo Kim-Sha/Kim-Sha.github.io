@@ -4,16 +4,16 @@ import { ProfileType } from "../../types"
 
 const Location = ({ location, relocation }) => (
   <>
-    <div className="inline-flex items-center bg-front mt-6 w-auto">
-      <span className="text-primary border-r-2 border-back px-3">
+    <div className="inline-flex items-center bg-back-3 mt-6 w-auto">
+      <span className="text-front-2 border-r-2 border-front-3 px-3">
         <FaMapMarkerAlt className="h-4 w-4" />
       </span>
-      <span className="text-back font-header font-bold py-1 px-3 text-lg">
+      <span className="text-front-text-3 font-header font-bold py-1 px-3 text-lg">
         {location}
       </span>
     </div>
     {relocation && (
-      <div className="text-xs uppercase mt-2 font-semibold text-front font-header">
+      <div className="text-xs uppercase mt-2 font-semibold text-front-text font-header">
         Princeton CBE '19
       </div>
     )}

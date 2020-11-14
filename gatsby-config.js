@@ -48,7 +48,7 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require("tailwindcss")(require("./src/utils/tailwind.config")("ksha-custom")),
+          require("tailwindcss")(require("./src/utils/tailwind.config")("ksha-light")),
           require("postcss-input-range"),
           require("autoprefixer"),
         ],
