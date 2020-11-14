@@ -18,14 +18,21 @@ module.exports = theme => {
         text: ["Roboto", "sans-serif"],
       },
       extend: {
-        screens: {
-          'dark-mode': { raw: '(prefers-color-scheme: dark)' }
-        },
         colors: {
-          ...colors,
-          "back-light": color(colors.back)
-            .lighten(0.18)
-            .hex(),
+          'back': 'var(--back)',
+          'back-2': 'var(--back-2)',
+          'back-3': "var(--back-3)",
+
+          'front': "var(--front)",
+          'front-2': 'var(--front-2)',
+          'front-3': 'var(--front-3)',
+          'front-4': 'var(--front-4)',
+          
+          'front-text': "var(--front-text)",
+          'front-text-2': "var(--front-text-2)",
+          'front-text-3': 'var(--front-text-3)',
+
+          'line': 'var(--line)',
         },
         borderRadius: {
           lg: "1rem",
