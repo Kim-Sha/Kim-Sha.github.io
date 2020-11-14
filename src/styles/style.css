@@ -33,7 +33,7 @@
     --prose-bold: #FEFEFA;
     --prose-head: #FEFEFA;
     --prose-link: #F4C430;
-    --prose-blockquote: #edf2f7;
+    --prose-blockquote: #F4C430;
     --prose-code: #F4C430;
     --prose-blurb: #F4C430;
 
@@ -69,10 +69,10 @@
     --prose: #343d52;
     --prose-bold: #1a202c;
     --prose-head: #1a202c;
-    --prose-link: #343d52;
-    --prose-blockquote: #343d52;
-    --prose-code: #343d52;
-    --prose-blurb: #343d52;
+    --prose-link: #1a202c;
+    --prose-blockquote: #1a202c;
+    --prose-code: #1a202c;
+    --prose-blurb: #1a202c;
 
     /* Outlines / borders */
     --line: #d5d5ce; /* light gray */
