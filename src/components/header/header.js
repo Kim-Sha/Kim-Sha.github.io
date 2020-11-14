@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { ThemeToggle } from "../toggle/toggle"
 import { HiMenuAlt2 } from "react-icons/hi"
 import { ProfileType } from "../../types"
 import { Link } from "gatsby"
@@ -20,13 +21,8 @@ const Header = ({ initials }) => {
             </span>
           </Link>
         </div>
-        <div className="hidden lg:block">
-          <Link
-            className="flex w-14 h-14 font-header font-semibold px-2 bg-front-2 rounded-full text-front-text-2 justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-            to='/contact-form'
-          >
-            <span className="hidden lg:block">Contact me</span>
-          </Link>
+        <div>
+          <ThemeToggle/>
         </div>
       </div>
       <div className={`${toggle ? 'block' : 'hidden'} rounded-t-none px-2 pb-4 lg:hidden bg-back-3 rounded-lg`}>
