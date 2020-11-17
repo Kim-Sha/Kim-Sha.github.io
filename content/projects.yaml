@@ -1,6 +1,6 @@
 - name: Kim-Sha.github.io
   url: https://github.com/Kim-Sha/Kim-Sha.github.io
-  description: An initial foray into the world of static-website building using Gatsby. The end result is this personal website hosted on GitHub pages that I will use as a personal porfolio.
+  description: An initial foray into the world of static-website building using the React-based Gatsby framework. The end result is this personal website, currently hosted on GitHub pages.
   status: in progress
   tags:
     - JavaScript
@@ -21,9 +21,9 @@
   icon: github
   image: images/dffnn.jpg
 
-- name: Senior Thesis
+- name: K-Means Clustering of Solar Irradiance Profiles (Undergraduate Thesis)
   url: https://dataspace.princeton.edu/handle/88435/dsp019s161900s
-  description: Modelling the Performance of Near-Ultraviolet Organic Solar Cells Under Meteorologically Representative Spectral Irradiances.
+  description: Modelling the performance of near-UV organic solar cells under meteorologically representative spectral irradiances. Data was queried from the NSRDB (National Solar Radiation Database) API maintained by NREL.
   status: live
   tags:
     - k-means clustering
