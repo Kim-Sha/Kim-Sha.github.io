@@ -1,3 +1,18 @@
+- name: Serverless Scraping of Solar Irradiance Data 
+  url: https://github.com/Kim-Sha/nrel-scraper
+  description: Scheduled scraping of data from NREL's Measurement and Instrumentation Data Center (MIDC). The baseline measurement system is located in Denver, CO.
+  status: in progress
+  tags:
+    - Python
+    - PostgreSQL
+    - Scrapy
+    - SQLAlchemy
+    - Serverless
+    - AWS Lambda
+    - AWS RDS
+  icon: github
+  image: images/nrel_midc_bms.jpg
+
 - name: Kim-Sha.github.io
   url: https://github.com/Kim-Sha/Kim-Sha.github.io
   description: An initial foray into the world of static-website building using the React-based Gatsby framework. The end result is this personal website, currently hosted on GitHub pages.
