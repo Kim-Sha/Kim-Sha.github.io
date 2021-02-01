@@ -1,6 +1,6 @@
 - name: Serverless Scraping of Solar Irradiance Data 
   url: https://github.com/Kim-Sha/nrel-scraper
-  description: The NREL Measurement and Instrumentation Data Center (MIDC) tracks granular solar and meteorological trends down to the minute at a station in Denver, CO. This automated crawler scrapes the data into a Postgres instance by leveraging AWS resources.
+  description: The NREL Measurement and Instrumentation Data Center (MIDC) tracks granular solar and meteorological trends down to the minute at a station in Golden, CO. This automated crawler scrapes the data into a Postgres instance by leveraging AWS resources.
   status: live
   tags:
     - Python
