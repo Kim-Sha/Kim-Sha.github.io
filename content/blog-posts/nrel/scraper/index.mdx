@@ -3,16 +3,17 @@ title: Serverless Web Scraping with AWS, Part I
 date: "2021-01-31"
 description: "ETL & Analysis of Solar Irradiance Data, Part 1"
 tags: ["Web Scraping", "ETL", "NREL"]
-featured: nrel_scraper_banner.png
+featured: nrel_scraper_process.png
 ---
 
 <p className="lead">
-  How do I build an ETL pipeline for an automated web scraper? In this post, I
+  How do I build an automated ETL pipeline from a simple web scraper? Over two posts, I
   document the resources I leverage to periodically extract solar irradiance and
   meteorological data from the Solar Energy Research Institute's (SRRL) online portal.
+  This first post will focus on developing the ETL pipeline itself.
 </p>
 
-![Tools and process of web scraping NREL data](./nrel_scraper_banner.png)
+![Tools and process of web scraping NREL data](../nrel_scraper_banner.png)
 
 The National Renewable Energy Laboratory (NREL) established the SRRL as a means
 to monitor solar resources on a continuous basis. Located in Golden, CO, the lab
@@ -186,6 +187,6 @@ As things currently stand, I'd have to wake up at 2AM everyday (i.e. midnight in
 Colorado), run the scrapy crawl for a days-worth of data, and question what I'm
 doing with my life.
 
-So, next week I'll revisit this topic and discuss how my ETL pipeline can be
+So, next time I'll revisit this topic and discuss how my ETL pipeline can be
 farmed off to a Lambda function using the Serverless Framework - all on AWS Free
 Tier!
