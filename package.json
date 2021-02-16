@@ -44,7 +44,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
     "react-loadable": "^5.5.0",
-    "react-plotlyjs": "^0.4.4",
+    "react-plotly.js": "^2.5.1",
     "react-text-loop": "^2.3.0",
     "react-typography": "^0.16.19",
     "tailwindcss": "^1.9.6",

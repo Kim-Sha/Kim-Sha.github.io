@@ -1,12 +1,18 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "./theme-context"
+import { MDXProvider } from '@mdx-js/react' 
+import { LazyPlot } from '../components/plots/plotly'
 import SEO from "../components/seo/seo"
 import StructuredData from "../components/structured-data/structured-data"
 import Header from "../components/header/header"
 import Sidebar from "../components/sidebar/sidebar"
 import Footer from "../components/footer/footer"
 import "../styles/style.css"
+
+const globalComponents = {
+  LazyPlot
+}
 
 export default function Layout({ children, sidebarOnMobile, description, meta, image, title, pathname }) {
 
@@ -39,7 +45,9 @@ export default function Layout({ children, sidebarOnMobile, description, meta, i
 
         <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap my-4">
           <Sidebar sidebarOnMobile={sidebarOnMobile} profile={profile} social={social.nodes} />
-          {children}
+          <MDXProvider components={globalComponents}>
+            {children}
+          </MDXProvider>
         </div>
 
         <Footer name={profile.name} devtool={devtool.nodes}/>
