@@ -1,6 +1,6 @@
 ---
 title: Serverless Web Scraping with AWS, Part II
-date: "2021-02-06"
+date: "2021-02-21"
 description: "ETL & Analysis of Solar Irradiance Data, Part 2"
 tags: ["Web Scraping", "ETL", "NREL"]
 featured: severless_schedule.png
@@ -13,7 +13,16 @@ featured: severless_schedule.png
   This second post will focus on automating the ETL pipeline.
 </p>
 
-![AWS Lambda functions can be triggered on a schedule](./severless_schedule.png)
+import { irradiance_animate_south40 } from '../nrel_figures'
+
+<figure>
+  <LazyPlot {...irradiance_animate_south40} />
+  <figcaption>
+    A taste of the measurements made by the NREL Baseline Measurement System in
+    Golden, Colorado. This is equivalent to the solar resource for collectors
+    with fixed-tilt and optimized for year-round performance. 
+  </figcaption>
+</figure>
 
 [Last time out](https://kim-sha.github.io/nrel/scraper/), I built an ETL pipeline
 on top of the Scrapy framework to gather data from NREL's station in Golden, CO.
@@ -23,6 +32,8 @@ some guy built a slew of somewhat profitable services for this exact reason.
 His name is Jeff.
 
 ## Core Tools
+
+![Tools and process of web scraping NREL data](../nrel_scraper_banner.png)
 
 I've already been using one of Jeff's 'somewhat profitable' offerings -
 Amazon RDS - to host my Postgres instance. This time round, I'll be
@@ -52,10 +63,10 @@ initialize and name a service from a template:
 $ serverless create --template aws-python3 --name nrel-scraper
 ```
 This will hook us up with a series of [configurations](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
-provided in `serverless.yml`, a `.gitignore`, and a `handler.py` script (more on that below).
+provided in `serverless.yml`, a `.gitignore`, and a `handler.py` script (more on that later).
 
-Next you'll want to [generate some AWS access keys](https://www.youtube.com/watch?v=KngM5bfpttA)
-for Serverless latch on to. If you insist on being a Road Runner, you
+Next, you'll want to [generate some AWS access keys](https://www.youtube.com/watch?v=KngM5bfpttA)
+for Serverless latch on to. If you're feeling the need for speed, you
 can dump them into a gitignored dotenv file and export them as environment variables
 in your shell (`source .env`) before deployment. I prefer the more permanent
 solution of setting up AWS profiles under `~/.aws/credentials`:
@@ -96,10 +107,6 @@ def scrape(event={}, context={}):
     crawl()
 
 if __name__ == "__main__":
-    try:
-        event = json.loads(sys.argv[1])
-    except IndexError:
-        event = {}
     scrape(event)
 ```
 
@@ -171,7 +178,7 @@ custom:
 
 ## Serverless Deployment
 
-![Tools and process of web scraping NREL data](../nrel_scraper_banner.png)
+![AWS Lambda functions can be triggered on a schedule](./severless_schedule.png)
 
 All that's left is to rehaul the functions field in `serverless.yml` to schedule
 the cron job and point to the correct handler method. Note that all
@@ -199,18 +206,19 @@ But first, deploy!
 ```shell
 $ serverless deploy --verbose
 ```
-The function will now self-trigger according to the schedule dictated to
-CloudWatch. You that can still manually trigger the job to run on Lambda:
-```shell
-$ serverless invoke -f nrelScrape --log
-```
 If by some miracle, the permissions across Amazon RDS, Lambda, and Serverless
 are all perfectly aligned, c'est fini. Personally, I had to do some
 [troubleshooting](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-rds-connection-timeouts/)
 to grease the wheels.
 
-Okay! We're done here. My own mother wouldn't have made it through this slog.
-So if you have, I'm sorry? Now, we sit back and let the solar irradiance and
-meteorological data from the finely calibrated pyranometers
+The function will now self-trigger according to the schedule dictated to
+CloudWatch. You can still manually trigger the job to run on Lambda:
+```shell
+$ serverless invoke -f nrelScrape --log
+```
+
+And we're done here! If you've somehow made it through this slog, I must both 
+apologize and thank you for bearing with me. Now, we sit back and let the solar
+irradiance and meteorological data from the finely calibrated pyranometers
 and pyrheliometers of the Solar Energy Research Institute's Baseline Measurement
 System roll in...
