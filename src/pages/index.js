@@ -4,18 +4,19 @@ import Layout from "../templates/layout"
 import MainContent from "../components/main-content/main-content"
 
 export default function Home({ data }) {
-
-  const { history, profile, projects, blogs } = data;
-  const image = profile.seo_image ? profile.seo_image.childImageSharp.resize : null
+  const { history, profile, projects, blogs } = data
+  const image = profile.seo_image
+    ? profile.seo_image.childImageSharp.resize
+    : null
 
   return (
     <Layout sidebarOnMobile={true} image={image}>
-        <MainContent
-          history={history.nodes}
-          profile={profile}
-          projects={projects.nodes}
-          blogs={blogs}
-        />
+      <MainContent
+        history={history.nodes}
+        profile={profile}
+        projects={projects.nodes}
+        blogs={blogs}
+      />
     </Layout>
   )
 }

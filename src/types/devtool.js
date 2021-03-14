@@ -12,7 +12,7 @@ export const DevtoolType = {
     "typescript",
     "css",
     "python",
-    "postgresql"
+    "postgresql",
   ]),
   url: string,
 }

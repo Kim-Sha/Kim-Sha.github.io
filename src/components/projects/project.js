@@ -17,7 +17,9 @@ const Project = props => {
         )}
         <div className="lg:flex-1">
           <h4 className="font-bold text-front-text">{name}</h4>
-          <p className="w-full py-4 whitespace-pre-line text-front-text">{description}</p>
+          <p className="w-full py-4 whitespace-pre-line text-front-text">
+            {description}
+          </p>
           <ul className="pr-2">
             {status && <ProjectStatus status={status} />}
             {tags && <ProjectTags tags={tags} />}

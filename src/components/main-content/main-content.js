@@ -22,7 +22,7 @@ const MainContent = ({ history, projects, blogs, profile }) => {
       </div>
 
       {profile.about && <About about={profile.about} />}
-      <Blogs blogs={blogs}/>
+      <Blogs blogs={blogs} />
       <Projects projects={projects} />
       <WorkHistory history={history} />
     </main>

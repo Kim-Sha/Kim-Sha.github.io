@@ -1,17 +1,12 @@
 import React from "react"
-import {
-  FaReact,
-  FaGithubAlt,
-  FaCss3,
-  FaPython
-} from "react-icons/fa"
+import { FaReact, FaGithubAlt, FaCss3, FaPython } from "react-icons/fa"
 import {
   SiGatsby,
   SiTailwindcss,
   SiGraphql,
   SiJavascript,
   SiTypescript,
-  SiPostgresql
+  SiPostgresql,
 } from "react-icons/si"
 import { DevtoolType } from "../../types"
 

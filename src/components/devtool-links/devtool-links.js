@@ -4,7 +4,7 @@ import { DevtoolType, arrayOf, shape } from "../../types"
 
 const DevtoolLinks = ({ devtool }) => {
   return (
-    <div className="pl-3" id='contact'>
+    <div className="pl-3" id="contact">
       {devtool.map(({ name, url }, i) => {
         return (
           <a

@@ -20,7 +20,7 @@ export const ProfileType = {
   }),
   seo_image: shape({
     childImageSharp: object.isRequired,
-    publicURL: string.isRequired
+    publicURL: string.isRequired,
   }),
   initials: string.isRequired,
   location: string.isRequired,

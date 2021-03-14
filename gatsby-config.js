@@ -6,9 +6,9 @@ module.exports = {
   siteMetadata: {
     title: `Kim Sha - Data Scientist`,
     description: `Princeton CBE'19 | I write about web development, machine learning, and data science in the context of sustainability and renewable energy.`,
-    author:`Kim Sha`,
-    locale: 'en',
-    siteUrl: 'https://kim-sha.github.io/'
+    author: `Kim Sha`,
+    locale: "en",
+    siteUrl: "https://kim-sha.github.io/",
   },
   plugins: [
     `gatsby-transformer-yaml`,
@@ -48,7 +48,9 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require("tailwindcss")(require("./src/utils/tailwind.config")("ksha-light")),
+          require("tailwindcss")(
+            require("./src/utils/tailwind.config")("ksha-light")
+          ),
           require("postcss-input-range"),
           require("autoprefixer"),
         ],
@@ -91,6 +93,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-smoothscroll`
+    `gatsby-plugin-smoothscroll`,
   ],
 }

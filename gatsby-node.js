@@ -47,7 +47,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   )
 
   if (result.errors) {
-    reporter.panicOnBuild(`There was an error loading your blog posts`, result.errors)
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      result.errors
+    )
     return
   }
 
@@ -65,8 +68,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           slug: post.fields.slug,
           previousPostId,
-          nextPostId
-        }
+          nextPostId,
+        },
       })
     })
   }

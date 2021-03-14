@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "./layout"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import scrollTo from "gatsby-plugin-smoothscroll"
 import { FaAngleUp } from "react-icons/fa"
 
 export default function BlogPost({ data }) {
@@ -18,11 +18,14 @@ export default function BlogPost({ data }) {
       description={post.frontmatter.description || post.excerpt}
       image={image}
       pathname={post.fields.slug}
-      >
+    >
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         <article className="prose mb-6">
-          <button className="fixed invisible lg:visible bottom-0 right-0 p-6 focus:outline-none text-front opacity-25 hover:opacity-100" onClick={() => scrollTo('#blog-header')}>
-            <FaAngleUp className="w-10 h-10"/>
+          <button
+            className="fixed invisible lg:visible bottom-0 right-0 p-6 focus:outline-none text-front opacity-25 hover:opacity-100"
+            onClick={() => scrollTo("#blog-header")}
+          >
+            <FaAngleUp className="w-10 h-10" />
           </button>
           <header id="blog-header">
             <h1>{post.frontmatter.title}</h1>

@@ -1,23 +1,25 @@
 import React from "react"
 import { number, string } from "prop-types"
 import SkillSvg from "./skill.svg"
-import {SiJavascript, SiTypescript, SiPostgresql} from "react-icons/si"
-import {FaPython} from "react-icons/fa"
+import { SiJavascript, SiTypescript, SiPostgresql } from "react-icons/si"
+import { FaPython } from "react-icons/fa"
 
 const Skill = ({ skill, i }) => {
   const skillIcons = {
     python: [FaPython, "https://www.python.org/", "Python"],
     javascript: [SiJavascript, "https://www.javascript.com/", "JavaScript"],
     typescript: [SiTypescript, "https://www.typescriptlang.org/", "TypeScript"],
-    postgresql: [SiPostgresql, "https://www.postgresql.org/", "PostgreSQL"]
+    postgresql: [SiPostgresql, "https://www.postgresql.org/", "PostgreSQL"],
   }
-  const SkillIcon = skillIcons[skill][0];
-  
+  const SkillIcon = skillIcons[skill][0]
+
   if (SkillIcon) {
     return (
       <div className="text-center text-back hover:text-front">
-        <SkillIcon className="m-2 w-16 h-16 md:w-24 md:h-24 text-front"/>
-        <p className="m-1 text-sm text-center w-20 md:text-base md:w-24">{skillIcons[skill][2]}</p>
+        <SkillIcon className="m-2 w-16 h-16 md:w-24 md:h-24 text-front" />
+        <p className="m-1 text-sm text-center w-20 md:text-base md:w-24">
+          {skillIcons[skill][2]}
+        </p>
       </div>
     )
   } else {

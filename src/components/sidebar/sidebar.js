@@ -6,7 +6,11 @@ import SocialLinks from "../social-links/social-links"
 import NavLinks from "../nav-links/nav-links"
 
 const Sidebar = ({ sidebarOnMobile, profile, social }) => (
-  <aside className={`${sidebarOnMobile ? 'block': 'hidden lg:block'} w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12`}>
+  <aside
+    className={`${
+      sidebarOnMobile ? "block" : "hidden lg:block"
+    } w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12`}
+  >
     <div className="flex flex-col h-full justify-between">
       <div>
         <h2 className="font-header font-light text-front-text text-2xl leading-none mb-4">

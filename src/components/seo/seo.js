@@ -26,7 +26,9 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
-  const metaTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title
+  const metaTitle = title
+    ? `${title} | ${site.siteMetadata.title}`
+    : site.siteMetadata.title
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   return (
@@ -64,7 +66,7 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author
+          content: site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
@@ -76,37 +78,37 @@ const SEO = ({ description, meta, image: metaImage, title, pathname }) => {
         },
         {
           name: `google-site-verification`,
-          content: `v1thc2SFLEi2YwH-_l7ggx2aiLimiADX21JbgkHdXNc`
-        }
+          content: `v1thc2SFLEi2YwH-_l7ggx2aiLimiADX21JbgkHdXNc`,
+        },
       ]
-      .concat(
-        metaImage
-          ? [
-              {
-                property: "og:image",
-                content: image,
-              },
-              {
-                property: "og:image:width",
-                content: metaImage.width,
-              },
-              {
-                property: "og:image:height",
-                content: metaImage.height,
-              },
-              {
-                name: "twitter:card",
-                content: "summary_large_image",
-              },
-            ]
-          : [
-              {
-                name: "twitter:card",
-                content: "summary",
-              },
-            ]
-      )
-      .concat(additionalMeta)}
+        .concat(
+          metaImage
+            ? [
+                {
+                  property: "og:image",
+                  content: image,
+                },
+                {
+                  property: "og:image:width",
+                  content: metaImage.width,
+                },
+                {
+                  property: "og:image:height",
+                  content: metaImage.height,
+                },
+                {
+                  name: "twitter:card",
+                  content: "summary_large_image",
+                },
+              ]
+            : [
+                {
+                  name: "twitter:card",
+                  content: "summary",
+                },
+              ]
+        )
+        .concat(additionalMeta)}
     />
   )
 }

@@ -1,21 +1,21 @@
 import React, { useState, useEffect, createContext } from "react"
 
 const getInitialTheme = () => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      const storedPrefs = window.localStorage.getItem("color-theme")
-      if (typeof storedPrefs === "string") {
-        return storedPrefs
-      }
-  
-      const userMedia = window.matchMedia("(prefers-color-scheme: light)")
-      if (userMedia.matches) {
-        return "light"
-      }
+  if (typeof window !== "undefined" && window.localStorage) {
+    const storedPrefs = window.localStorage.getItem("color-theme")
+    if (typeof storedPrefs === "string") {
+      return storedPrefs
     }
-  
-    // If you want to use light theme as the default, return "light" instead
-    return "light"
+
+    const userMedia = window.matchMedia("(prefers-color-scheme: light)")
+    if (userMedia.matches) {
+      return "light"
+    }
   }
+
+  // If you want to use light theme as the default, return "light" instead
+  return "light"
+}
 
 export const ThemeContext = createContext()
 
@@ -36,7 +36,9 @@ export const ThemeProvider = ({ initialTheme, children }) => {
     rawSetTheme(initialTheme)
   }
 
-  useEffect(() => {rawSetTheme(theme)}, [theme])
+  useEffect(() => {
+    rawSetTheme(theme)
+  }, [theme])
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

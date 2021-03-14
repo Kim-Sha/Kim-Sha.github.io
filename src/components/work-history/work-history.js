@@ -35,10 +35,14 @@ const WorkHistory = ({ history }) => {
             )}
 
             {position && (
-              <h5 className="text-front-text text-sm font-normal mb-1">{position}</h5>
+              <h5 className="text-front-text text-sm font-normal mb-1">
+                {position}
+              </h5>
             )}
             {period && (
-              <span className="text-front-text text-sm font-medium opacity-50">{period}</span>
+              <span className="text-front-text text-sm font-medium opacity-50">
+                {period}
+              </span>
             )}
           </div>
         ))}
