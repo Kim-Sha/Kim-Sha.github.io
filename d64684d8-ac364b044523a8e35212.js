@@ -1,0 +1,2 @@
+(self.webpackChunkkim_sha_github_io=self.webpackChunkkim_sha_github_io||[]).push([[556],{4893:function(a,t,e){"use strict";e.d(t,{umT:function(){return u}});var i=e(5566);function u(a){return(0,i.w_)({tag:"svg",attr:{viewBox:"0 0 20 20",fill:"currentColor"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z",clipRule:"evenodd"}}]})(a)}}}]);
+//# sourceMappingURL=d64684d8-ac364b044523a8e35212.js.map
