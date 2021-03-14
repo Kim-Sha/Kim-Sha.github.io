@@ -1,11 +1,8 @@
 module.exports = () => {
   return {
-    purge: {
-      content: [`${__dirname}/src/**/*.js`, `./src/**/*.js`],
-      options: {
-        whitelistPatterns: [/^text-skill/, /^border-skill/],
-      },
-    },
+    future: {
+      purgeLayersByDefault: true,
+    },  
     theme: {
       fontFamily: {
         header: ["Source Sans Pro", "sans-serif"],
