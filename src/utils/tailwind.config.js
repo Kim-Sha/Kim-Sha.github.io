@@ -39,53 +39,53 @@ module.exports = () => {
         spacing: {
           14: "3.5rem",
         },
-      },
-      typography: theme => ({
-        default: {
-          css: {
-            color: theme("colors.prose"),
-            strong: {
-              color: theme("colors.prose-bold"),
-            },
-            h1: {
-              color: theme("colors.prose-head"),
-            },
-            h2: {
-              color: theme("colors.prose-head"),
-            },
-            h3: {
-              color: theme("colors.prose-head"),
-            },
-            h4: {
-              color: theme("colors.prose-head"),
-            },
-            h5: {
-              color: theme("colors.prose-head"),
-            },
-            h6: {
-              color: theme("colors.prose-head"),
-            },
-            a: {
-              color: theme("colors.prose-link"),
-            },
-            blockquote: {
-              color: theme("colors.prose-blockquote"),
-            },
-            code: {
-              color: theme("colors.prose-code"),
-            },
-            thead: {
+        typography: theme => ({
+          DEFAULT: {
+            css: {
               color: theme("colors.prose"),
-            },
-            hr: {
-              color: theme("colors.prose"),
-            },
-            '[class~="lead"]': {
-              color: theme("colors.prose-lead"),
+              strong: {
+                color: theme("colors.prose-bold"),
+              },
+              h1: {
+                color: theme("colors.prose-head"),
+              },
+              h2: {
+                color: theme("colors.prose-head"),
+              },
+              h3: {
+                color: theme("colors.prose-head"),
+              },
+              h4: {
+                color: theme("colors.prose-head"),
+              },
+              h5: {
+                color: theme("colors.prose-head"),
+              },
+              h6: {
+                color: theme("colors.prose-head"),
+              },
+              a: {
+                color: theme("colors.prose-link"),
+              },
+              blockquote: {
+                color: theme("colors.prose-blockquote"),
+              },
+              code: {
+                color: theme("colors.prose-code"),
+              },
+              thead: {
+                color: theme("colors.prose"),
+              },
+              hr: {
+                color: theme("colors.prose"),
+              },
+              '[class~="lead"]': {
+                color: theme("colors.prose-lead"),
+              },
             },
           },
-        },
-      }),
+        }),        
+      },
     },
     plugins: [require("@tailwindcss/typography")],
   }
