@@ -19,7 +19,7 @@ export default function BlogPost({ data }) {
       image={image}
       pathname={post.fields.slug}
     >
-      <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
+      <div className="w-full lg:w-2/3 lg:pl-8 xl:pl-12">
         <article className="prose mb-6">
           <button
             className="fixed invisible lg:visible bottom-0 right-0 p-6 focus:outline-none text-front opacity-25 hover:opacity-100"
