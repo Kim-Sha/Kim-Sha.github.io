@@ -7,7 +7,7 @@
   seo_image: images/ksha_profile2.png
   location: New York, USA
   relocation: true
-  company: CKM Analytix
+  company: Cornell Tech
   for_hire: true
   focus: Not breaking this website
   focus_url: https://gatsbyjs.org
@@ -15,8 +15,8 @@
     I write about web development, machine learning, and data science in the context of sustainability and renewable energy.
   skills:
     - python
-    - typescript
     - postgresql
+    - javascript
   tools:
     - Pandas
     - D3 & Plotly

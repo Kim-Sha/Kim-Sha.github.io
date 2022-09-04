@@ -6,7 +6,7 @@ const Summary = ({ profile }) => (
   <div className="flex pb-8">
     <div className="w-1/2 pr-4 lg:pr-12 border-r border-line">
       <h5 className="font-header font-semibold text-front-text text-sm uppercase">
-        Company
+        Masters student at
       </h5>
       <h3 className="font-header font-light text-2xl text-front-text leading-tight">
         {profile.company}
@@ -14,7 +14,7 @@ const Summary = ({ profile }) => (
       {profile.for_hire && (
         <div className="font-header font-semibold text-xs pt-2 text-front-text">
           <span className="inline-block w-2 h-2 rounded-full mr-1 bg-green-500"></span>
-          Operational BI
+          Dual MS in Applied Information Science, Information Systems - Urban Tech
         </div>
       )}
     </div>

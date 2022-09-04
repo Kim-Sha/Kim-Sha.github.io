@@ -14,7 +14,7 @@ const Location = ({ location, relocation }) => (
     </div>
     {relocation && (
       <div className="text-xs uppercase mt-2 font-semibold text-front-text font-header">
-        Princeton CBE '19
+        Cornell UT '24<br></br>Princeton CBE '19
       </div>
     )}
   </>
