@@ -5,7 +5,7 @@ import { ProfileType } from "../../types"
 const Skills = ({ skills }) => (
   <>
     <h5 className="font-header font-semibold text-front-text text-sm uppercase mb-3">
-      Top skills
+      Top languages
     </h5>
     <ul className="flex-wrap grid grid-cols-4 gap-2 md:gap-4">
       {skills.map((skill, i) => (
