@@ -1,6 +1,6 @@
 ---
 title: NYC 311 Reporting
-date: "2021-02-21"
+date: "2022-12-30"
 description: "Identification, visualization and analysis of an urban soft system."
 tags: ["EDA", "Urban Tech"]
 featured: 311_snapshot.png
@@ -10,3 +10,39 @@ featured: 311_snapshot.png
   PLACEHOLDER
 </p>
 
+import { volume_by_medium, volume_by_complaint, volume_by_agency, volume_by_agency_complaint_sunburst, volume_by_tod_heatmap } from './nyc311_figures'
+
+<figure>
+  <LazyPlot {...volume_by_medium} />
+  <figcaption>
+    PLACEHOLDER
+  </figcaption>
+</figure>
+
+<figure>
+  <LazyPlot {...volume_by_complaint} />
+  <figcaption>
+    PLACEHOLDER
+  </figcaption>
+</figure>
+
+<figure>
+  <LazyPlot {...volume_by_agency} />
+  <figcaption>
+    PLACEHOLDER
+  </figcaption>
+</figure>
+
+<figure>
+  <LazyPlot {...volume_by_agency_complaint_sunburst} />
+  <figcaption>
+    PLACEHOLDER
+  </figcaption>
+</figure>
+
+<figure>
+  <LazyPlot {...volume_by_tod_heatmap} />
+  <figcaption>
+    PLACEHOLDER
+  </figcaption>
+</figure>

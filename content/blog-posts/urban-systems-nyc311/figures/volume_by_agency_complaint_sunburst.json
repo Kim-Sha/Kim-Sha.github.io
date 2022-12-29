@@ -1,0 +1,1733 @@
+{
+  "data": [
+    {
+      "branchvalues": "total",
+      "domain": {
+        "x": [
+          0.0,
+          1.0
+        ],
+        "y": [
+          0.0,
+          1.0
+        ]
+      },
+      "hovertemplate": "labels=%{label}<br>unique_key=%{value}<br>parent=%{parent}<br>id=%{id}<extra></extra>",
+      "ids": [
+        "Department of Buildings/AHV Inspection Unit",
+        "Department of Housing Preservation and Development/APPLIANCE",
+        "Department of Sanitation/Abandoned Bike",
+        "New York City Police Department/Abandoned Vehicle",
+        "Department of Sanitation/Adopt-A-Basket",
+        "Department of Environmental Protection/Air Quality",
+        "Department of Health and Mental Hygiene/Animal Facility - No Permit",
+        "Department of Parks and Recreation/Animal in a Park",
+        "New York City Police Department/Animal-Abuse",
+        "Department of Environmental Protection/Asbestos",
+        "Department of Health and Mental Hygiene/Asbestos",
+        "Department of Buildings/BEST/Site Safety",
+        "Department of Health and Mental Hygiene/Beach/Pool/Sauna Complaint",
+        "Department of Transportation/Bike Rack Condition",
+        "New York City Police Department/Bike/Roller/Skate Chronic",
+        "New York City Police Department/Blocked Driveway",
+        "Department of Buildings/Boilers",
+        "Department of Buildings/Borough Office",
+        "Department of Health and Mental Hygiene/Bottled Water",
+        "Department of Transportation/Bridge Condition",
+        "Department of Transportation/Broken Parking Meter",
+        "Department of Transportation/Building Condition",
+        "Department of Health and Mental Hygiene/Building Drinking Water Tank",
+        "Department of Buildings/Building Marshals office",
+        "Department of Buildings/Building/Use",
+        "Department of Transportation/Bus Stop Shelter Complaint",
+        "Department of Transportation/Bus Stop Shelter Placement",
+        "Department of Buildings/COVID-19 Non-essential Construction",
+        "Department of Health and Mental Hygiene/Calorie Labeling",
+        "Department of Sanitation/Commercial Disposal Complaint",
+        "Department of Health and Mental Hygiene/Construction Lead Dust",
+        "Department of Consumer Affairs/Consumer Complaint",
+        "Department of Health and Mental Hygiene/Cooling Tower",
+        "Department of Buildings/Cranes and Derricks",
+        "Department of Transportation/Curb Condition",
+        "Department of Transportation/DEP Highway Condition",
+        "Department of Transportation/DEP Sidewalk Condition",
+        "Department of Transportation/DEP Street Condition",
+        "Department of Housing Preservation and Development/DOOR/WINDOW",
+        "Department of Sanitation/DSNY Internal",
+        "Department of Parks and Recreation/Damaged Tree",
+        "Department of Health and Mental Hygiene/Day Care",
+        "Department of Sanitation/Dead Animal",
+        "Department of Parks and Recreation/Dead/Dying Tree",
+        "Department of Buildings/Dept of Investigations",
+        "Department of Sanitation/Derelict Vehicles",
+        "Department of Sanitation/Dirty Condition",
+        "New York City Police Department/Disorderly Youth",
+        "Taxi and Limousine Commission/Dispatched Taxi Complaint",
+        "Taxi and Limousine Commission/Dispatched Taxi Compliment",
+        "New York City Police Department/Drinking",
+        "Department of Health and Mental Hygiene/Drinking Water",
+        "New York City Police Department/Drug Activity",
+        "Department of Sanitation/Dumpster Complaint",
+        "Department of Transportation/E-Scooter",
+        "Department of Housing Preservation and Development/ELECTRIC",
+        "Department of Housing Preservation and Development/ELEVATOR",
+        "Department of Buildings/Electrical",
+        "Department of Sanitation/Electronics Waste Appointment",
+        "Department of Buildings/Elevator",
+        "Department of Buildings/Emergency Response Team (ERT)",
+        "Department of Homeless Services/Encampment",
+        "New York City Police Department/Encampment",
+        "Taxi and Limousine Commission/FHV Licensee Complaint",
+        "Department of Housing Preservation and Development/FLOORING/STAIRS",
+        "Department of Buildings/Facade Insp Safety Pgm",
+        "Department of Buildings/Facades",
+        "Department of Health and Mental Hygiene/Face Covering Violation",
+        "Department of Transportation/Ferry Complaint",
+        "Department of Transportation/Ferry Inquiry",
+        "Department of Health and Mental Hygiene/Food Establishment",
+        "Department of Health and Mental Hygiene/Food Poisoning",
+        "Taxi and Limousine Commission/For Hire Vehicle Complaint",
+        "Taxi and Limousine Commission/For Hire Vehicle Report",
+        "Taxi and Limousine Commission/Found Property",
+        "Department of Housing Preservation and Development/GENERAL",
+        "Department of Buildings/General Construction/Plumbing",
+        "Department of Sanitation/Graffiti",
+        "New York City Police Department/Graffiti",
+        "Taxi and Limousine Commission/Green Taxi Complaint",
+        "Taxi and Limousine Commission/Green Taxi Report",
+        "Department of Housing Preservation and Development/HEAT/HOT WATER",
+        "Department of Health and Mental Hygiene/Harboring Bees/Wasps",
+        "Department of Environmental Protection/Hazardous Materials",
+        "Department of Transportation/Highway Condition",
+        "Department of Transportation/Highway Sign - Damaged",
+        "Department of Transportation/Highway Sign - Dangling",
+        "Department of Transportation/Highway Sign - Missing",
+        "Department for the Aging/Home Delivered Meal - Missed Delivery",
+        "Department of Homeless Services/Homeless Person Assistance",
+        "Operations Unit - Department of Homeless Services/Homeless Person Assistance",
+        "Department of Health and Mental Hygiene/Illegal Animal Kept as Pet",
+        "Department of Health and Mental Hygiene/Illegal Animal Sold",
+        "Department of Sanitation/Illegal Dumping",
+        "New York City Police Department/Illegal Fireworks",
+        "New York City Police Department/Illegal Parking",
+        "Department of Sanitation/Illegal Posting",
+        "Department of Parks and Recreation/Illegal Tree Damage",
+        "Department of Sanitation/Incorrect Data",
+        "Department of Health and Mental Hygiene/Indoor Air Quality",
+        "Department of Health and Mental Hygiene/Indoor Sewage",
+        "Department of Environmental Protection/Industrial Waste",
+        "Department of Sanitation/Institution Disposal Complaint",
+        "Department of Environmental Protection/Internal Code",
+        "Department of Buildings/Investigations and Discipline (IAD)",
+        "Department of Environmental Protection/Lead",
+        "Department of Health and Mental Hygiene/Lifeguard",
+        "Office of Technology and Innovation/LinkNYC",
+        "Department of Sanitation/Litter Basket Complaint",
+        "Department of Sanitation/Litter Basket Request",
+        "Taxi and Limousine Commission/Lost Property",
+        "Department of Sanitation/Lot Condition",
+        "Department of Health and Mental Hygiene/MOLD",
+        "Department of Parks and Recreation/Maintenance or Facility",
+        "New York City Police Department/Mass Gathering Complaint",
+        "Department of Sanitation/Missed Collection",
+        "Department of Health and Mental Hygiene/Mobile Food Vendor",
+        "Department of Health and Mental Hygiene/Mold",
+        "Department of Health and Mental Hygiene/Mosquitoes",
+        "Department of Transportation/Municipal Parking Facility",
+        "Department of Parks and Recreation/New Tree Request",
+        "Department of Environmental Protection/Noise",
+        "New York City Police Department/Noise - Commercial",
+        "Economic Development Corporation/Noise - Helicopter",
+        "New York City Police Department/Noise - House of Worship",
+        "New York City Police Department/Noise - Park",
+        "New York City Police Department/Noise - Residential",
+        "New York City Police Department/Noise - Street/Sidewalk",
+        "New York City Police Department/Noise - Vehicle",
+        "New York City Police Department/Non-Emergency Police Matter",
+        "Department of Health and Mental Hygiene/Non-Residential Heat",
+        "Department of Housing Preservation and Development/OUTSIDE BUILDING",
+        "Department of Sanitation/Obstruction",
+        "Department of Sanitation/Oil or Gas Spill",
+        "Department of Transportation/Outdoor Dining",
+        "Department of Parks and Recreation/Overgrown Tree/Branches",
+        "Department of Housing Preservation and Development/PAINT/PLASTER",
+        "Department of Housing Preservation and Development/PLUMBING",
+        "New York City Police Department/Panhandling",
+        "Department of Health and Mental Hygiene/Pet Shop",
+        "Department of Environmental Protection/Plant",
+        "Department of Buildings/Plumbing",
+        "Department of Health and Mental Hygiene/Poison Ivy",
+        "New York City Police Department/Posting Advertisement",
+        "Department of Health and Mental Hygiene/Private School Vaccine Mandate Non-Compliance",
+        "Mayor\u00e2\u0080\u0099s Office of Special Enforcement/Private or Charter School Reopening",
+        "Office of Technology and Innovation/Public Payphone Complaint",
+        "Department of Transportation/Public Toilet",
+        "Department of Health and Mental Hygiene/Radioactive Material",
+        "Department of Buildings/Real Time Enforcement",
+        "Department of Sanitation/Recycling Basket Complaint",
+        "Department of Sanitation/Request Large Bulky Item Collection",
+        "Department of Sanitation/Residential Disposal Complaint",
+        "Department of Sanitation/Retailer Complaint",
+        "Department of Health and Mental Hygiene/Rodent",
+        "Department of Parks and Recreation/Root/Sewer/Sidewalk Condition",
+        "Department of Housing Preservation and Development/SAFETY",
+        "Department of Sanitation/Sanitation Worker or Vehicle Complaint",
+        "Department of Buildings/Scaffold Safety",
+        "Department of Education/School Maintenance",
+        "Department of Sanitation/Seasonal Collection",
+        "Department of Environmental Protection/Sewer",
+        "Department of Transportation/Sidewalk Condition",
+        "Department of Health and Mental Hygiene/Smoking",
+        "Department of Sanitation/Snow or Ice",
+        "Department of Buildings/Special Natural Area District (SNAD)",
+        "Department of Buildings/Special Operations",
+        "Department of Buildings/Special Projects Inspection Team (SPIT)",
+        "New York City Police Department/Squeegee",
+        "Department of Health and Mental Hygiene/Standing Water",
+        "Department of Transportation/Street Condition",
+        "Department of Transportation/Street Light Condition",
+        "Department of Transportation/Street Sign - Damaged",
+        "Department of Transportation/Street Sign - Dangling",
+        "Department of Transportation/Street Sign - Missing",
+        "Department of Sanitation/Street Sweeping Complaint",
+        "Department of Health and Mental Hygiene/Tanning",
+        "Department of Health and Mental Hygiene/Tattooing",
+        "Taxi and Limousine Commission/Taxi Complaint",
+        "Taxi and Limousine Commission/Taxi Compliment",
+        "Taxi and Limousine Commission/Taxi Licensee Complaint",
+        "Taxi and Limousine Commission/Taxi Report",
+        "New York City Police Department/Traffic",
+        "Department of Transportation/Traffic Signal Condition",
+        "Department of Sanitation/Transfer Station Complaint",
+        "Department of Transportation/Tunnel Condition",
+        "Department of Housing Preservation and Development/UNSANITARY CONDITION",
+        "Department of Health and Mental Hygiene/Unleashed Dog",
+        "Department of Health and Mental Hygiene/Unsanitary Animal Facility",
+        "Department of Health and Mental Hygiene/Unsanitary Animal Pvt Property",
+        "Department of Health and Mental Hygiene/Unsanitary Pigeon Condition",
+        "Department of Parks and Recreation/Uprooted Stump",
+        "New York City Police Department/Urinating in Public",
+        "Department of Health and Mental Hygiene/Vaccine Mandate Non-Compliance",
+        "Department of Parks and Recreation/Violation of Park Rules",
+        "Department of Housing Preservation and Development/WATER LEAK",
+        "Department of Environmental Protection/Water Conservation",
+        "Department of Environmental Protection/Water Quality",
+        "Department of Environmental Protection/Water System",
+        "Department of Health and Mental Hygiene/Window Guard",
+        "Department of Parks and Recreation/Wood Pile Remaining",
+        "Department of Health and Mental Hygiene/X-Ray Machine/Equipment",
+        "Department of Environmental Protection/ZTESTINT",
+        "Department for the Aging",
+        "Department of Buildings",
+        "Department of Consumer Affairs",
+        "Department of Education",
+        "Department of Environmental Protection",
+        "Department of Health and Mental Hygiene",
+        "Department of Homeless Services",
+        "Department of Housing Preservation and Development",
+        "Department of Parks and Recreation",
+        "Department of Sanitation",
+        "Department of Transportation",
+        "Economic Development Corporation",
+        "Mayor\u00e2\u0080\u0099s Office of Special Enforcement",
+        "New York City Police Department",
+        "Office of Technology and Innovation",
+        "Operations Unit - Department of Homeless Services",
+        "Taxi and Limousine Commission"
+      ],
+      "labels": [
+        "AHV Inspection Unit",
+        "APPLIANCE",
+        "Abandoned Bike",
+        "Abandoned Vehicle",
+        "Adopt-A-Basket",
+        "Air Quality",
+        "Animal Facility - No Permit",
+        "Animal in a Park",
+        "Animal-Abuse",
+        "Asbestos",
+        "Asbestos",
+        "BEST/Site Safety",
+        "Beach/Pool/Sauna Complaint",
+        "Bike Rack Condition",
+        "Bike/Roller/Skate Chronic",
+        "Blocked Driveway",
+        "Boilers",
+        "Borough Office",
+        "Bottled Water",
+        "Bridge Condition",
+        "Broken Parking Meter",
+        "Building Condition",
+        "Building Drinking Water Tank",
+        "Building Marshals office",
+        "Building/Use",
+        "Bus Stop Shelter Complaint",
+        "Bus Stop Shelter Placement",
+        "COVID-19 Non-essential Construction",
+        "Calorie Labeling",
+        "Commercial Disposal Complaint",
+        "Construction Lead Dust",
+        "Consumer Complaint",
+        "Cooling Tower",
+        "Cranes and Derricks",
+        "Curb Condition",
+        "DEP Highway Condition",
+        "DEP Sidewalk Condition",
+        "DEP Street Condition",
+        "DOOR/WINDOW",
+        "DSNY Internal",
+        "Damaged Tree",
+        "Day Care",
+        "Dead Animal",
+        "Dead/Dying Tree",
+        "Dept of Investigations",
+        "Derelict Vehicles",
+        "Dirty Condition",
+        "Disorderly Youth",
+        "Dispatched Taxi Complaint",
+        "Dispatched Taxi Compliment",
+        "Drinking",
+        "Drinking Water",
+        "Drug Activity",
+        "Dumpster Complaint",
+        "E-Scooter",
+        "ELECTRIC",
+        "ELEVATOR",
+        "Electrical",
+        "Electronics Waste Appointment",
+        "Elevator",
+        "Emergency Response Team (ERT)",
+        "Encampment",
+        "Encampment",
+        "FHV Licensee Complaint",
+        "FLOORING/STAIRS",
+        "Facade Insp Safety Pgm",
+        "Facades",
+        "Face Covering Violation",
+        "Ferry Complaint",
+        "Ferry Inquiry",
+        "Food Establishment",
+        "Food Poisoning",
+        "For Hire Vehicle Complaint",
+        "For Hire Vehicle Report",
+        "Found Property",
+        "GENERAL",
+        "General Construction/Plumbing",
+        "Graffiti",
+        "Graffiti",
+        "Green Taxi Complaint",
+        "Green Taxi Report",
+        "HEAT/HOT WATER",
+        "Harboring Bees/Wasps",
+        "Hazardous Materials",
+        "Highway Condition",
+        "Highway Sign - Damaged",
+        "Highway Sign - Dangling",
+        "Highway Sign - Missing",
+        "Home Delivered Meal - Missed Delivery",
+        "Homeless Person Assistance",
+        "Homeless Person Assistance",
+        "Illegal Animal Kept as Pet",
+        "Illegal Animal Sold",
+        "Illegal Dumping",
+        "Illegal Fireworks",
+        "Illegal Parking",
+        "Illegal Posting",
+        "Illegal Tree Damage",
+        "Incorrect Data",
+        "Indoor Air Quality",
+        "Indoor Sewage",
+        "Industrial Waste",
+        "Institution Disposal Complaint",
+        "Internal Code",
+        "Investigations and Discipline (IAD)",
+        "Lead",
+        "Lifeguard",
+        "LinkNYC",
+        "Litter Basket Complaint",
+        "Litter Basket Request",
+        "Lost Property",
+        "Lot Condition",
+        "MOLD",
+        "Maintenance or Facility",
+        "Mass Gathering Complaint",
+        "Missed Collection",
+        "Mobile Food Vendor",
+        "Mold",
+        "Mosquitoes",
+        "Municipal Parking Facility",
+        "New Tree Request",
+        "Noise",
+        "Noise - Commercial",
+        "Noise - Helicopter",
+        "Noise - House of Worship",
+        "Noise - Park",
+        "Noise - Residential",
+        "Noise - Street/Sidewalk",
+        "Noise - Vehicle",
+        "Non-Emergency Police Matter",
+        "Non-Residential Heat",
+        "OUTSIDE BUILDING",
+        "Obstruction",
+        "Oil or Gas Spill",
+        "Outdoor Dining",
+        "Overgrown Tree/Branches",
+        "PAINT/PLASTER",
+        "PLUMBING",
+        "Panhandling",
+        "Pet Shop",
+        "Plant",
+        "Plumbing",
+        "Poison Ivy",
+        "Posting Advertisement",
+        "Private School Vaccine Mandate Non-Compliance",
+        "Private or Charter School Reopening",
+        "Public Payphone Complaint",
+        "Public Toilet",
+        "Radioactive Material",
+        "Real Time Enforcement",
+        "Recycling Basket Complaint",
+        "Request Large Bulky Item Collection",
+        "Residential Disposal Complaint",
+        "Retailer Complaint",
+        "Rodent",
+        "Root/Sewer/Sidewalk Condition",
+        "SAFETY",
+        "Sanitation Worker or Vehicle Complaint",
+        "Scaffold Safety",
+        "School Maintenance",
+        "Seasonal Collection",
+        "Sewer",
+        "Sidewalk Condition",
+        "Smoking",
+        "Snow or Ice",
+        "Special Natural Area District (SNAD)",
+        "Special Operations",
+        "Special Projects Inspection Team (SPIT)",
+        "Squeegee",
+        "Standing Water",
+        "Street Condition",
+        "Street Light Condition",
+        "Street Sign - Damaged",
+        "Street Sign - Dangling",
+        "Street Sign - Missing",
+        "Street Sweeping Complaint",
+        "Tanning",
+        "Tattooing",
+        "Taxi Complaint",
+        "Taxi Compliment",
+        "Taxi Licensee Complaint",
+        "Taxi Report",
+        "Traffic",
+        "Traffic Signal Condition",
+        "Transfer Station Complaint",
+        "Tunnel Condition",
+        "UNSANITARY CONDITION",
+        "Unleashed Dog",
+        "Unsanitary Animal Facility",
+        "Unsanitary Animal Pvt Property",
+        "Unsanitary Pigeon Condition",
+        "Uprooted Stump",
+        "Urinating in Public",
+        "Vaccine Mandate Non-Compliance",
+        "Violation of Park Rules",
+        "WATER LEAK",
+        "Water Conservation",
+        "Water Quality",
+        "Water System",
+        "Window Guard",
+        "Wood Pile Remaining",
+        "X-Ray Machine/Equipment",
+        "ZTESTINT",
+        "Department for the Aging",
+        "Department of Buildings",
+        "Department of Consumer Affairs",
+        "Department of Education",
+        "Department of Environmental Protection",
+        "Department of Health and Mental Hygiene",
+        "Department of Homeless Services",
+        "Department of Housing Preservation and Development",
+        "Department of Parks and Recreation",
+        "Department of Sanitation",
+        "Department of Transportation",
+        "Economic Development Corporation",
+        "Mayor\u00e2\u0080\u0099s Office of Special Enforcement",
+        "New York City Police Department",
+        "Office of Technology and Innovation",
+        "Operations Unit - Department of Homeless Services",
+        "Taxi and Limousine Commission"
+      ],
+      "name": "",
+      "parents": [
+        "Department of Buildings",
+        "Department of Housing Preservation and Development",
+        "Department of Sanitation",
+        "New York City Police Department",
+        "Department of Sanitation",
+        "Department of Environmental Protection",
+        "Department of Health and Mental Hygiene",
+        "Department of Parks and Recreation",
+        "New York City Police Department",
+        "Department of Environmental Protection",
+        "Department of Health and Mental Hygiene",
+        "Department of Buildings",
+        "Department of Health and Mental Hygiene",
+        "Department of Transportation",
+        "New York City Police Department",
+        "New York City Police Department",
+        "Department of Buildings",
+        "Department of Buildings",
+        "Department of Health and Mental Hygiene",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Health and Mental Hygiene",
+        "Department of Buildings",
+        "Department of Buildings",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Buildings",
+        "Department of Health and Mental Hygiene",
+        "Department of Sanitation",
+        "Department of Health and Mental Hygiene",
+        "Department of Consumer Affairs",
+        "Department of Health and Mental Hygiene",
+        "Department of Buildings",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Housing Preservation and Development",
+        "Department of Sanitation",
+        "Department of Parks and Recreation",
+        "Department of Health and Mental Hygiene",
+        "Department of Sanitation",
+        "Department of Parks and Recreation",
+        "Department of Buildings",
+        "Department of Sanitation",
+        "Department of Sanitation",
+        "New York City Police Department",
+        "Taxi and Limousine Commission",
+        "Taxi and Limousine Commission",
+        "New York City Police Department",
+        "Department of Health and Mental Hygiene",
+        "New York City Police Department",
+        "Department of Sanitation",
+        "Department of Transportation",
+        "Department of Housing Preservation and Development",
+        "Department of Housing Preservation and Development",
+        "Department of Buildings",
+        "Department of Sanitation",
+        "Department of Buildings",
+        "Department of Buildings",
+        "Department of Homeless Services",
+        "New York City Police Department",
+        "Taxi and Limousine Commission",
+        "Department of Housing Preservation and Development",
+        "Department of Buildings",
+        "Department of Buildings",
+        "Department of Health and Mental Hygiene",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Taxi and Limousine Commission",
+        "Taxi and Limousine Commission",
+        "Taxi and Limousine Commission",
+        "Department of Housing Preservation and Development",
+        "Department of Buildings",
+        "Department of Sanitation",
+        "New York City Police Department",
+        "Taxi and Limousine Commission",
+        "Taxi and Limousine Commission",
+        "Department of Housing Preservation and Development",
+        "Department of Health and Mental Hygiene",
+        "Department of Environmental Protection",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department for the Aging",
+        "Department of Homeless Services",
+        "Operations Unit - Department of Homeless Services",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Department of Sanitation",
+        "New York City Police Department",
+        "New York City Police Department",
+        "Department of Sanitation",
+        "Department of Parks and Recreation",
+        "Department of Sanitation",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Department of Environmental Protection",
+        "Department of Sanitation",
+        "Department of Environmental Protection",
+        "Department of Buildings",
+        "Department of Environmental Protection",
+        "Department of Health and Mental Hygiene",
+        "Office of Technology and Innovation",
+        "Department of Sanitation",
+        "Department of Sanitation",
+        "Taxi and Limousine Commission",
+        "Department of Sanitation",
+        "Department of Health and Mental Hygiene",
+        "Department of Parks and Recreation",
+        "New York City Police Department",
+        "Department of Sanitation",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Department of Transportation",
+        "Department of Parks and Recreation",
+        "Department of Environmental Protection",
+        "New York City Police Department",
+        "Economic Development Corporation",
+        "New York City Police Department",
+        "New York City Police Department",
+        "New York City Police Department",
+        "New York City Police Department",
+        "New York City Police Department",
+        "New York City Police Department",
+        "Department of Health and Mental Hygiene",
+        "Department of Housing Preservation and Development",
+        "Department of Sanitation",
+        "Department of Sanitation",
+        "Department of Transportation",
+        "Department of Parks and Recreation",
+        "Department of Housing Preservation and Development",
+        "Department of Housing Preservation and Development",
+        "New York City Police Department",
+        "Department of Health and Mental Hygiene",
+        "Department of Environmental Protection",
+        "Department of Buildings",
+        "Department of Health and Mental Hygiene",
+        "New York City Police Department",
+        "Department of Health and Mental Hygiene",
+        "Mayor\u00e2\u0080\u0099s Office of Special Enforcement",
+        "Office of Technology and Innovation",
+        "Department of Transportation",
+        "Department of Health and Mental Hygiene",
+        "Department of Buildings",
+        "Department of Sanitation",
+        "Department of Sanitation",
+        "Department of Sanitation",
+        "Department of Sanitation",
+        "Department of Health and Mental Hygiene",
+        "Department of Parks and Recreation",
+        "Department of Housing Preservation and Development",
+        "Department of Sanitation",
+        "Department of Buildings",
+        "Department of Education",
+        "Department of Sanitation",
+        "Department of Environmental Protection",
+        "Department of Transportation",
+        "Department of Health and Mental Hygiene",
+        "Department of Sanitation",
+        "Department of Buildings",
+        "Department of Buildings",
+        "Department of Buildings",
+        "New York City Police Department",
+        "Department of Health and Mental Hygiene",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Transportation",
+        "Department of Sanitation",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Taxi and Limousine Commission",
+        "Taxi and Limousine Commission",
+        "Taxi and Limousine Commission",
+        "Taxi and Limousine Commission",
+        "New York City Police Department",
+        "Department of Transportation",
+        "Department of Sanitation",
+        "Department of Transportation",
+        "Department of Housing Preservation and Development",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Department of Health and Mental Hygiene",
+        "Department of Parks and Recreation",
+        "New York City Police Department",
+        "Department of Health and Mental Hygiene",
+        "Department of Parks and Recreation",
+        "Department of Housing Preservation and Development",
+        "Department of Environmental Protection",
+        "Department of Environmental Protection",
+        "Department of Environmental Protection",
+        "Department of Health and Mental Hygiene",
+        "Department of Parks and Recreation",
+        "Department of Health and Mental Hygiene",
+        "Department of Environmental Protection",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "values": [
+        130,
+        15693,
+        1424,
+        52906,
+        355,
+        10021,
+        132,
+        3861,
+        6140,
+        716,
+        467,
+        370,
+        193,
+        185,
+        1372,
+        127507,
+        2850,
+        14,
+        16,
+        365,
+        4573,
+        5,
+        39,
+        1,
+        15024,
+        1053,
+        162,
+        1,
+        8,
+        1192,
+        659,
+        19551,
+        22,
+        85,
+        5652,
+        5,
+        2,
+        73,
+        33844,
+        1,
+        21423,
+        1290,
+        8328,
+        8414,
+        29,
+        40618,
+        37130,
+        137,
+        2,
+        2,
+        2774,
+        246,
+        5745,
+        1407,
+        199,
+        22047,
+        1457,
+        1497,
+        7467,
+        12071,
+        2621,
+        8074,
+        29534,
+        16,
+        19216,
+        1,
+        1,
+        1086,
+        194,
+        262,
+        8822,
+        2002,
+        11578,
+        273,
+        81,
+        23070,
+        32364,
+        10721,
+        2760,
+        173,
+        10,
+        175860,
+        428,
+        1534,
+        3789,
+        96,
+        18,
+        42,
+        26,
+        30946,
+        28,
+        395,
+        81,
+        24744,
+        8872,
+        335679,
+        2020,
+        3346,
+        94,
+        4869,
+        355,
+        645,
+        52,
+        7,
+        362,
+        7570,
+        30,
+        129,
+        1273,
+        2411,
+        6030,
+        1772,
+        1,
+        16769,
+        2,
+        43855,
+        2554,
+        236,
+        370,
+        63,
+        16320,
+        39270,
+        51953,
+        19729,
+        1153,
+        7896,
+        334145,
+        140639,
+        57691,
+        12686,
+        759,
+        657,
+        10640,
+        3,
+        4431,
+        16728,
+        42675,
+        46001,
+        5619,
+        125,
+        120,
+        2385,
+        126,
+        57,
+        204,
+        93,
+        24,
+        33,
+        16,
+        4210,
+        69,
+        47008,
+        6632,
+        13,
+        36206,
+        7382,
+        9440,
+        2460,
+        160,
+        1029,
+        183,
+        23997,
+        19043,
+        3448,
+        5564,
+        46,
+        5,
+        2947,
+        83,
+        1246,
+        69291,
+        48060,
+        4295,
+        3062,
+        3668,
+        6145,
+        2,
+        185,
+        5702,
+        73,
+        3,
+        675,
+        4239,
+        34861,
+        5,
+        5,
+        81731,
+        1474,
+        75,
+        1769,
+        852,
+        490,
+        724,
+        1241,
+        3510,
+        29411,
+        3142,
+        1021,
+        54648,
+        21,
+        363,
+        32,
+        7,
+        26,
+        77174,
+        19551,
+        1029,
+        142698,
+        72082,
+        39020,
+        501102,
+        98606,
+        263586,
+        203487,
+        19729,
+        93,
+        1190313,
+        153,
+        28,
+        24618
+      ],
+      "type": "sunburst"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "histogram2dcontour": [
+          {
+            "type": "histogram2dcontour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "choropleth": [
+          {
+            "type": "choropleth",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "histogram2d": [
+          {
+            "type": "histogram2d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "heatmap": [
+          {
+            "type": "heatmap",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "heatmapgl": [
+          {
+            "type": "heatmapgl",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "contourcarpet": [
+          {
+            "type": "contourcarpet",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "contour": [
+          {
+            "type": "contour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "surface": [
+          {
+            "type": "surface",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "mesh3d": [
+          {
+            "type": "mesh3d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "parcoords": [
+          {
+            "type": "parcoords",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "type": "scatterpolargl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#2a3f5f"
+            },
+            "error_y": {
+              "color": "#2a3f5f"
+            },
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "scattergeo": [
+          {
+            "type": "scattergeo",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolar": [
+          {
+            "type": "scatterpolar",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "scattergl": [
+          {
+            "type": "scattergl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatter3d": [
+          {
+            "type": "scatter3d",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermapbox": [
+          {
+            "type": "scattermapbox",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterternary": [
+          {
+            "type": "scatterternary",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattercarpet": [
+          {
+            "type": "scattercarpet",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#EBF0F8"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#C8D4E3"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "type": "table"
+          }
+        ],
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ]
+      },
+      "layout": {
+        "autotypenumbers": "strict",
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#2a3f5f"
+        },
+        "hovermode": "closest",
+        "hoverlabel": {
+          "align": "left"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "#E5ECF6",
+        "polar": {
+          "bgcolor": "#E5ECF6",
+          "angularaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "radialaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "ternary": {
+          "bgcolor": "#E5ECF6",
+          "aaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "caxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "sequential": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "sequentialminus": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "diverging": [
+            [
+              0,
+              "#8e0152"
+            ],
+            [
+              0.1,
+              "#c51b7d"
+            ],
+            [
+              0.2,
+              "#de77ae"
+            ],
+            [
+              0.3,
+              "#f1b6da"
+            ],
+            [
+              0.4,
+              "#fde0ef"
+            ],
+            [
+              0.5,
+              "#f7f7f7"
+            ],
+            [
+              0.6,
+              "#e6f5d0"
+            ],
+            [
+              0.7,
+              "#b8e186"
+            ],
+            [
+              0.8,
+              "#7fbc41"
+            ],
+            [
+              0.9,
+              "#4d9221"
+            ],
+            [
+              1,
+              "#276419"
+            ]
+          ]
+        },
+        "xaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "yaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "zaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#2a3f5f"
+          }
+        },
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "geo": {
+          "bgcolor": "white",
+          "landcolor": "#E5ECF6",
+          "subunitcolor": "white",
+          "showland": true,
+          "showlakes": true,
+          "lakecolor": "white"
+        },
+        "title": {
+          "x": 0.05
+        },
+        "mapbox": {
+          "style": "light"
+        }
+      }
+    },
+    "legend": {
+      "tracegroupgap": 0
+    },
+    "title": {
+      "text": "Breakdown of 311 Service Request Volume"
+    },
+    "height": 750
+  }
+}

@@ -1,1 +1,5 @@
-export const volume_by_agency = require("./volume_by_agency.json")
+export const volume_by_agency = require("./figures/volume_by_agency.json")
+export const volume_by_agency_complaint_sunburst = require("./figures/volume_by_agency_complaint_sunburst.json")
+export const volume_by_complaint = require("./figures/volume_by_complaint.json")
+export const volume_by_medium = require("./figures/volume_by_medium.json")
+export const volume_by_tod_heatmap = require("./figures/volume_by_tod_heatmap.json")
