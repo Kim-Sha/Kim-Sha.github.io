@@ -1,3 +1,14 @@
+- name: Exploration of NYC 311 Service Requests
+  url: https://github.com/Kim-Sha/urban-systems-nyc311
+  description: Identification, visualization and analysis of an urban soft system. 311 is a 'hotline' that users can dial to submit service requests for government agencies to address.
+  status: live
+  tags:
+    - Python
+    - Plotly
+    - SQL (SoQL)
+  icon: github
+  image: images/311_snapshot.png
+
 - name: Serverless Scraping of Solar Irradiance Data 
   url: https://github.com/Kim-Sha/nrel-scraper
   description: The NREL Measurement and Instrumentation Data Center (MIDC) tracks granular solar and meteorological trends down to the minute at a station in Golden, CO. This automated crawler scrapes the data into a Postgres instance by leveraging AWS resources.
