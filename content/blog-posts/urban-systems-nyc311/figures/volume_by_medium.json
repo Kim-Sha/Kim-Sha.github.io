@@ -4,7 +4,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "open_data_channel_type=ONLINE<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Medium=ONLINE<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "ONLINE",
       "line": {
         "color": "#636efa"
@@ -332,7 +332,7 @@
         112934,
         120441,
         112610,
-        119442
+        123904
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -341,7 +341,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "open_data_channel_type=OTHER<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Medium=OTHER<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "OTHER",
       "line": {
         "color": "#EF553B"
@@ -662,7 +662,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "open_data_channel_type=PHONE<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Medium=PHONE<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "PHONE",
       "line": {
         "color": "#00cc96"
@@ -990,7 +990,7 @@
         66755,
         69248,
         67545,
-        53009
+        55245
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -999,7 +999,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "open_data_channel_type=UNKNOWN<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Medium=UNKNOWN<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "UNKNOWN",
       "line": {
         "color": "#ab63fa"
@@ -1326,8 +1326,8 @@
         26440,
         22204,
         22818,
-        20175,
-        20151
+        20176,
+        21287
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -1336,7 +1336,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "open_data_channel_type=MOBILE<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Medium=MOBILE<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "MOBILE",
       "line": {
         "color": "#FFA15A"
@@ -1586,7 +1586,7 @@
         70116,
         54551,
         46199,
-        37346
+        38588
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -2416,7 +2416,7 @@
         1.0
       ],
       "title": {
-        "text": "year_month"
+        "text": "Date"
       }
     },
     "yaxis": {
@@ -2426,18 +2426,18 @@
         1.0
       ],
       "title": {
-        "text": "volume"
+        "text": "Volume"
       }
     },
     "legend": {
       "title": {
-        "text": "open_data_channel_type"
+        "text": "Medium"
       },
       "tracegroupgap": 0
     },
     "title": {
       "text": "311 Volume Breakdown by Medium"
     },
-    "height": 500
+    "height": 400
   }
 }

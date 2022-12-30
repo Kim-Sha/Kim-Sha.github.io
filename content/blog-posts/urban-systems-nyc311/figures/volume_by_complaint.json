@@ -4,7 +4,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=Blocked Driveway<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=Blocked Driveway<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "Blocked Driveway",
       "line": {
         "color": "#636efa"
@@ -332,7 +332,7 @@
         13333,
         13758,
         13645,
-        12452
+        12887
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -341,7 +341,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=HEATING<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=HEATING<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "HEATING",
       "line": {
         "color": "#EF553B"
@@ -468,7 +468,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=Noise - Residential<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=Noise - Residential<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "Noise - Residential",
       "line": {
         "color": "#00cc96"
@@ -796,7 +796,7 @@
         44350,
         27492,
         21052,
-        18315
+        18942
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -805,7 +805,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=Noise - Street/Sidewalk<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=Noise - Street/Sidewalk<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "Noise - Street/Sidewalk",
       "line": {
         "color": "#ab63fa"
@@ -1133,7 +1133,7 @@
         18329,
         11858,
         7699,
-        3609
+        3726
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -1142,7 +1142,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=PLUMBING<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=PLUMBING<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "PLUMBING",
       "line": {
         "color": "#FFA15A"
@@ -1470,7 +1470,7 @@
         4182,
         4774,
         4954,
-        5636
+        5901
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -1479,7 +1479,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=Street Condition<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=Street Condition<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "Street Condition",
       "line": {
         "color": "#19d3f3"
@@ -1807,7 +1807,7 @@
         5351,
         5346,
         4555,
-        4470
+        4711
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -1816,7 +1816,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=Street Light Condition<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=Street Light Condition<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "Street Light Condition",
       "line": {
         "color": "#FF6692"
@@ -2144,7 +2144,7 @@
         5018,
         4701,
         4402,
-        3881
+        4123
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -2153,7 +2153,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=Illegal Parking<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=Illegal Parking<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "Illegal Parking",
       "line": {
         "color": "#B6E880"
@@ -2471,7 +2471,7 @@
         36157,
         36828,
         35097,
-        29624
+        30605
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -2480,7 +2480,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=HEAT/HOT WATER<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=HEAT/HOT WATER<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "HEAT/HOT WATER",
       "line": {
         "color": "#FF97FF"
@@ -2708,7 +2708,7 @@
         3167,
         25903,
         34061,
-        49924
+        51443
       ],
       "yaxis": "y",
       "type": "scatter"
@@ -2717,7 +2717,7 @@
       "fillpattern": {
         "shape": ""
       },
-      "hovertemplate": "complaint_type=Request Large Bulky Item Collection<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Complaint Type=Request Large Bulky Item Collection<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "Request Large Bulky Item Collection",
       "line": {
         "color": "#FECB52"
@@ -3687,7 +3687,7 @@
         1.0
       ],
       "title": {
-        "text": "year_month"
+        "text": "Date"
       }
     },
     "yaxis": {
@@ -3697,18 +3697,18 @@
         1.0
       ],
       "title": {
-        "text": "volume"
+        "text": "Volume"
       }
     },
     "legend": {
       "title": {
-        "text": "complaint_type"
+        "text": "Complaint Type"
       },
       "tracegroupgap": 0
     },
     "title": {
       "text": "311 Volume Breakdown by Complaint Type"
     },
-    "height": 750
+    "height": 400
   }
 }

@@ -2,7 +2,7 @@
   "data": [
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=3-1-1<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=3-1-1<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "3-1-1",
       "marker": {
         "color": "#636efa",
@@ -203,7 +203,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DCA<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DCA<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DCA",
       "marker": {
         "color": "#EF553B",
@@ -531,14 +531,14 @@
         2077,
         2108,
         2136,
-        1496
+        1571
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DEP<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DEP<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DEP",
       "marker": {
         "color": "#00cc96",
@@ -866,14 +866,14 @@
         14964,
         12161,
         12046,
-        11419
+        11968
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DFTA<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DFTA<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DFTA",
       "marker": {
         "color": "#ab63fa",
@@ -1186,7 +1186,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DHS<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DHS<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DHS",
       "marker": {
         "color": "#FFA15A",
@@ -1514,14 +1514,14 @@
         5618,
         5233,
         3749,
-        2269
+        2307
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DOB<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DOB<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DOB",
       "marker": {
         "color": "#19d3f3",
@@ -1848,15 +1848,15 @@
         9135,
         8382,
         7532,
-        7312,
-        6116
+        7313,
+        6381
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DOE<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DOE<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DOE",
       "marker": {
         "color": "#FF6692",
@@ -2184,14 +2184,14 @@
         98,
         70,
         96,
-        79
+        80
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DOF<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DOF<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DOF",
       "marker": {
         "color": "#B6E880",
@@ -2442,7 +2442,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DOHMH<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DOHMH<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DOHMH",
       "marker": {
         "color": "#FF97FF",
@@ -2770,14 +2770,14 @@
         7227,
         6742,
         5549,
-        4720
+        4919
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DOITT<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DOITT<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DOITT",
       "marker": {
         "color": "#FECB52",
@@ -3088,7 +3088,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DOT<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DOT<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DOT",
       "marker": {
         "color": "#636efa",
@@ -3416,14 +3416,14 @@
         18940,
         18385,
         16454,
-        15240
+        16057
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DPR<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DPR<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DPR",
       "marker": {
         "color": "#EF553B",
@@ -3751,14 +3751,14 @@
         12163,
         10567,
         6517,
-        4940
+        5156
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DSNY<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DSNY<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DSNY",
       "marker": {
         "color": "#00cc96",
@@ -4086,14 +4086,14 @@
         23118,
         22035,
         20749,
-        17205
+        18103
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=HPD<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=HPD<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "HPD",
       "marker": {
         "color": "#ab63fa",
@@ -4421,14 +4421,14 @@
         35555,
         61491,
         67900,
-        82489
+        85525
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=NYCEM<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=NYCEM<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "NYCEM",
       "marker": {
         "color": "#FFA15A",
@@ -4679,7 +4679,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=NYPD<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=NYPD<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "NYPD",
       "marker": {
         "color": "#19d3f3",
@@ -5007,14 +5007,14 @@
         138511,
         115891,
         98340,
-        78638
+        81332
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=TLC<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=TLC<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "TLC",
       "marker": {
         "color": "#FF6692",
@@ -5342,14 +5342,14 @@
         2809,
         2887,
         2691,
-        2427
+        2523
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=EDC<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=EDC<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "EDC",
       "marker": {
         "color": "#B6E880",
@@ -5669,14 +5669,14 @@
         2571,
         1988,
         3004,
-        2930
+        3122
       ],
       "yaxis": "y",
       "type": "bar"
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=ACS<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=ACS<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "ACS",
       "marker": {
         "color": "#FF97FF",
@@ -5775,7 +5775,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=HRA<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=HRA<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "HRA",
       "marker": {
         "color": "#FECB52",
@@ -5978,7 +5978,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DCP<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DCP<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DCP",
       "marker": {
         "color": "#636efa",
@@ -6077,7 +6077,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DORIS<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DORIS<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DORIS",
       "marker": {
         "color": "#EF553B",
@@ -6108,7 +6108,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DCAS<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DCAS<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DCAS",
       "marker": {
         "color": "#00cc96",
@@ -6177,7 +6177,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=TAT<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=TAT<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "TAT",
       "marker": {
         "color": "#ab63fa",
@@ -6224,7 +6224,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=TAX<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=TAX<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "TAX",
       "marker": {
         "color": "#FFA15A",
@@ -6293,7 +6293,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=COIB<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=COIB<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "COIB",
       "marker": {
         "color": "#19d3f3",
@@ -6346,7 +6346,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=OMB<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=OMB<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "OMB",
       "marker": {
         "color": "#FF6692",
@@ -6373,7 +6373,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=CEO<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=CEO<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "CEO",
       "marker": {
         "color": "#B6E880",
@@ -6400,7 +6400,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=FDNY<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=FDNY<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "FDNY",
       "marker": {
         "color": "#FF97FF",
@@ -6435,7 +6435,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=MOC<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=MOC<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "MOC",
       "marker": {
         "color": "#FECB52",
@@ -6464,7 +6464,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=DVS<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=DVS<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "DVS",
       "marker": {
         "color": "#636efa",
@@ -6489,7 +6489,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=OSE<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=OSE<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "OSE",
       "marker": {
         "color": "#EF553B",
@@ -6556,7 +6556,7 @@
     },
     {
       "alignmentgroup": "True",
-      "hovertemplate": "agency=OTI<br>year_month=%{x}<br>volume=%{y}<extra></extra>",
+      "hovertemplate": "Agency=OTI<br>Date=%{x}<br>Volume=%{y}<extra></extra>",
       "legendgroup": "OTI",
       "marker": {
         "color": "#00cc96",
@@ -7426,7 +7426,7 @@
         1.0
       ],
       "title": {
-        "text": "year_month"
+        "text": "Date"
       }
     },
     "yaxis": {
@@ -7436,12 +7436,12 @@
         1.0
       ],
       "title": {
-        "text": "volume"
+        "text": "Volume"
       }
     },
     "legend": {
       "title": {
-        "text": "agency"
+        "text": "Agency"
       },
       "tracegroupgap": 0
     },
@@ -7449,6 +7449,6 @@
       "text": "311 Volume Breakdown by Agency"
     },
     "barmode": "relative",
-    "height": 500
+    "height": 400
   }
 }
