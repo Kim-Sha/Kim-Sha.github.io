@@ -1,0 +1,176 @@
+---
+title: Exploring NYC 311, Part I
+date: "2023-01-01"
+description: "Identification, visualization and analysis of an urban soft system."
+tags: ["EDA", "Urban Tech"]
+featured: nyc311_logo.png
+---
+
+import { volume_by_medium, volume_by_complaint, volume_by_agency,
+         volume_by_agency_complaint_sunburst, volume_by_tod_heatmap } from '../nyc311_figures'
+
+<p className="lead">
+  Urban soft systems include the social, cultural, and economic networks that
+  are critical to the human side of cities, but are comparatively invisible
+  compared to hard (engineered) systems. This three-part series will look at
+  a particularly salient system for residents of NYC: the 311 reporting service.
+</p>
+
+![Photo Credits: NYC311](./nyc311_logo.png)
+
+311 is a 'hotline' that users can dial to submit service requests for government
+agencies to address. These agencies can then take this data and create work orders
+for teams to fix the problems raised. This system exists primarily in urban
+settings and covers non-emergency complaints such as noise, downed trees, and
+illegally parked cars. One can think of it as a ticketing system that the NYC
+government uses to receive, track, and prioritize urban issues. 311 reporting is
+thus a soft system that helps orchestrate the healthy function of NYC municipal
+services.
+
+## NYC Open Data
+
+The goal of this series of articles is to map and identify patterns in the
+components that make up this system. Analyses leverage 4 sets of data from
+[NYC Open Data](https://opendata.cityofnewyork.us/):
+
+1. [311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9): provides 311 reporting as far back as 2010, and is updated on an automated daily basis. Each record in this dataset corresponds to a 311 service request.
+2. [NYC Community Boards](https://data.cityofnewyork.us/City-Government/NYC-Community-Boards/ruf7-3wgc) + [Community Districts](https://data.cityofnewyork.us/City-Government/Community-Districts/yfnk-k7r4): provides the locations of community boards mapped as nodes in the network, as well as neighborhood boundaries.
+3. [Agency Service Center](https://data.cityofnewyork.us/Social-Services/Agency-Service-Center/nn5y-wmuj): provides locations of agency service centers mapped as nodes in the network.
+4. [311 Service Level Agreements](https://data.cityofnewyork.us/City-Government/311-Service-Level-Agreements/cs9t-e3x8): describes and quantifies commitments that City Agencies have made to respond to 311 Service Requests in a timely manner.
+
+## Aggregate Volumes
+
+We focus in this article on developing a basic understanding of the scale of
+operations. Since 2010, a whopping **31,942,335** service requests have flowed
+through 311. Brooklyn has been a relatively large contributor to this flood of
+requests:
+
+|Borough        |Volume    |Fraction (%)|
+|---------------|----------|------------|
+|Brooklyn       |9,493,491 |29.7        |
+|Queens         |7,432,616 |23.3        |
+|Manhattan      |6,205,367 |19.4        |
+|Bronx          |5,921,249 |18.5        |
+|Staten Island  |1,603,867 |5.0         |
+
+Usage of the system has grown too, with 3,164,062 requests having come in 2022.
+This can be sliced by categorical fields such as `agency_name` and `complaint_type`:
+
+<figure>
+  <LazyPlot {...volume_by_agency_complaint_sunburst} />
+  <figcaption>
+    Figure 1. Interactive breakdown of agency reponsibilities for 311 service
+    requests in 2022.
+  </figcaption>
+</figure>
+
+It's clear from Figure 1 that complaints handled by each agency are mutually exclusive.
+
+## Temporal Trends and Outliers
+
+### How has the medium through which users interact with the 311 system changed over time?
+
+Perhaps unsurprisingly, service requests submitted by a 311 call center agent on
+behalf of a customer (`PHONE`) has traditionally been the primary source of work.
+It makes up ~47% of all requests submitted since 2010.
+
+<figure>
+  <LazyPlot {...volume_by_medium} />
+  <figcaption>
+    Figure 2. Interactive visualization of demand over time coming from each
+    medium that a user can submit a service request through.
+  </figcaption>
+</figure>
+
+Toggling the traces in Figure 2 above shows a clear dropoff in phone dominance
+over the last 2 years, despite growing usage of 311 overall. Users appear to instead
+be switching over to mobile / online usage of the 311 app. This is particularly
+prominent in a growth spike during Summer 2020 driven by the mobile / online mediums
+(more on this later).
+
+### How have the complaint types changed over time?
+
+Residential noise complaints alone describe ~10% of requests since 2010.
+Over time, there have been spikes in volume for specific requests:
+
+<figure>
+  <LazyPlot {...volume_by_complaint} />
+  <figcaption>
+    Figure 3. Interactive visualization of 311 requests over time for the 10 most
+    common complaint types, accounting for ~44% of all requests since 2010.
+    Note that <code>HEATING</code> has been re-categorized as
+    <code>HEAT/HOT WATER</code> in March 2014. 
+  </figcaption>
+</figure>
+
+Figure 3 above illustrates significant **periodicity** present in the data:
+- Heating / hot water complaints spike in winter months when demand is known to peak.
+- Noise complaints (especially from the street / sidewalk) spike in summer months
+when city residents and traffic are relatively active.
+- Complaints about street and street light conditions spike roughly every Spring
+as well, when [roads tend to crack](https://weatherworksinc.com/news/why-do-potholes-form-in-spring).
+
+### How has the volume of requests fielded by agencies changed over time?
+
+The New York Police Department (NYPD) and Department of Housing Preservation and
+Development (HPD) receive the most requests. Since 2010, their combined demand
+makes up almost 53% of all 311 calls.
+
+We can see how the periodicity described above bubbles up to the agencies
+responsible for the complaint types as seasonal waves:
+- The HPD faces most calls in winter months when heat/hot water is crucial.
+- The NYPD faces most calls in summer months when residents are particularly active.
+
+<figure>
+  <LazyPlot {...volume_by_agency} />
+  <figcaption>
+    Figure 4. Interactive visualization of 311 requests over time broken down by
+    the agency (see <a href="https://a856-cityrecord.nyc.gov/Home/AgencyAcronyms">
+    agency acronyms </a> here) responsible for the response.
+  </figcaption>
+</figure>
+
+Certain agencies also fielded unprecedented surges in 311 calls in 2020 (double-click
+traces in the legend to isolate specific agencies). Cross referencing with complaint
+type and descriptors provides insight into likely driving factors, and allows us
+to match these peaks up to events in the [COVID-19 pandemic timeline](https://www.nytimes.com/interactive/2022/nyregion/nyc-covid-timeline.html):
+
+|Agency                                          |Peak (2020)|Driver / Context|
+|------------------------------------------------|-----------|------------|
+|[DCA](https://www.nyc.gov/site/dca/index.page)  |March      |7351 consumer complaints directed at retail stores during the [onset of COVID-19 lockdowns](https://www.nytimes.com/2020/03/20/nyregion/coronavirus-new-york-update.html).|
+|[DFTA](https://www.nyc.gov/site/dfta/index.page)|April      |1774 missed delivery complaints during COVID-19 lockdowns directed at the Home Delivered Meals program for older adults.|
+|[NYPD](https://www.nyc.gov/site/nypd/index.page)|June       |> 87k noise complaints (both residential and street/sidewalk) coincide with Phase 2 of [NYC reopening](https://www.nytimes.com/2020/06/18/nyregion/phase-2-reopening-nyc.html) and the emergency of outdoor dining.|
+|[DPR](https://www.nycgovparks.org/)             |August     |> 45k reports (~78%) are of fallen or damaged trees arising from [Tropical Storm Isaias](https://www.ny1.com/nyc/all-boroughs/news/2020/08/17/toppled-trees-topple-new-yorkers-as-city-tries-to-clear-isaias--mess#:~:text=Tree%20issues%20were%20the%20worst,according%20to%20the%20Parks%20Department.).|
+
+#### When are people complaining?
+
+As expected, a large chunk of requests occur during weekday working hours
+(~40% Monday to Friday from 9AM - 5PM). It's also worth noting the peak that
+occurs on Saturday nights, when noise complaints about late night party-goers
+comprise almost half of all 311 service requests between 11PM - 1AM. 
+
+<figure>
+  <LazyPlot {...volume_by_tod_heatmap} />
+  <figcaption>
+    Figure 5. Interactive heatmap of service requests submission volumes by time
+    of the day.
+  </figcaption>
+</figure>
+
+## Next Steps
+
+As is becoming evident in the complaint types and descriptors above, the 311 network
+is inherently intertwined with 'hard' systems such as:
+
+1. the physical communications network infrastructure (mobile, internet networks)
+that the system leverages in order to operate.
+2. the hard physical infrastructure that are the subject of service requests:
+transportation, water & sanitation, buildings etc.
+
+Therefore, we may define the overall *network* as characterized by a set
+of human processes and interactions that make it 'soft', but there are also
+decidedly 'hard' elements that differ by geography. It makes sense then
+to assess whether different regions are adequately served by city agencies.
+
+**Part 2 of this series will focus more on mapping as a tool to conduct spatial
+analysis of the presence of agency activity across different NYC boroughs.**
