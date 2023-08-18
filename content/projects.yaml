@@ -9,6 +9,18 @@
   icon: github
   image: images/2022-04-06_13-13-12_UTC_3.jpg
 
+- name: Event Planning App
+  url: https://vacation-planner-8137d.web.app/Explore
+  description: Web application to create and track details of upcoming events and vacations.
+  status: live
+  tags:
+    - JS
+    - Express
+    - React
+    - Tailwind
+  icon: website
+  image: images/vacation_planner.png
+
 - name: Exploration of NYC 311 Service Requests
   url: https://github.com/Kim-Sha/urban-systems-nyc311
   description: Identification, visualization and analysis of an urban soft system. 311 is a 'hotline' that users can dial to submit service requests for government agencies to address.
