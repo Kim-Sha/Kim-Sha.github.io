@@ -9,18 +9,18 @@
   relocation: true
   company: Cornell Tech
   for_hire: true
-  focus: Data Science at Square
+  focus: not breaking this website
   focus_url: https://block.xyz/
   about: |
-    Most recently a Senior Data Scientist at CKM Analytix, I'm currently pursuing a masters in Information Systems at Cornell. This website serves both as a project portfolio and sandbox for me to write about data science in the context of urban technologies and sustainability.
+    Most recently a Data Science Intern at Square (Block, Inc.), I'm currently pursuing an MS in Applied Information Science at Cornell. I graduated from Princeton in 2019 with a BSE in Chemical & Biological Engineering, and was a Senior Data Scientist at CKM Analytix prior to Cornell. This website serves both as a portfolio and sandbox for me to write about data science in the context of urban technologies and sustainability.
   skills:
     - python
     - postgresql
     - javascript
   tools:
     - Pandas
+    - Scikit-learn
     - Plotly (D3)
-    - React
   budget:
     currency: $
     min: 5
