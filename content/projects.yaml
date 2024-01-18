@@ -1,5 +1,5 @@
 - name: Predicting Service Level Agreement (SLA) Violations for NYC 311
-  url: https://github.com/Kim-Sha/urban-systems-nyc311/blob/main/article.pdf
+  url: https://github.com/Kim-Sha/urban-systems-nyc311
   description: Classifying the likelihood that government agencies meet response time commitments for 311 complaints, a 'hotline' that users can dial to submit service requests for government agencies to address.
   status: live
   tags:

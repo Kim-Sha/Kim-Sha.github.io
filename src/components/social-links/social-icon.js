@@ -13,6 +13,7 @@ import {
   FaYoutube,
   FaXing,
 } from "react-icons/fa"
+import HuggingFaceIcon from "./hf-logo.svg"
 import { SocialType } from "../../types"
 
 const SocialIcon = ({ name, ...params }) => {
@@ -29,6 +30,7 @@ const SocialIcon = ({ name, ...params }) => {
     twitter: FaTwitter,
     youtube: FaYoutube,
     xing: FaXing,
+    huggingface: HuggingFaceIcon
   }
 
   const Icon = icons[name]
