@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { useMDXComponent } from "gatsby-plugin-mdx"
 import Layout from "./layout"
 import SEO from "../components/seo/seo"
 import StructuredData from "../components/structured-data/structured-data"
@@ -10,7 +9,6 @@ import { FaAngleUp } from "react-icons/fa"
 export default function BlogPost({ data, children }) {
   const post = data.mdx
   const { previous, next } = data
-  const MDXContent = useMDXComponent(post.body ?? "")
 
   return (
     <Layout>
@@ -26,7 +24,7 @@ export default function BlogPost({ data, children }) {
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
           </header>
-          {post.body ? <MDXContent /> : children}
+          {children}
         </article>
         <nav>
           <ul className="flex justify-between">
@@ -81,7 +79,6 @@ export const pageQuery = graphql`
       }
     }
     mdx(id: { eq: $id }) {
-      body
       fields {
         slug
       }
