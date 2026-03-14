@@ -9,7 +9,7 @@ const Skills = ({ skills }) => (
     </h5>
     <ul className="flex-wrap grid grid-cols-4 gap-2 md:gap-4">
       {skills.map((skill, i) => (
-        <Skill skill={skill} i={i + 1} />
+        <Skill key={skill} skill={skill} i={i + 1} />
       ))}
     </ul>
   </>

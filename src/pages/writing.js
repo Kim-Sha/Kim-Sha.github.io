@@ -2,10 +2,24 @@ import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../templates/layout"
 import ProjectTags from "../components/projects/project-tags"
+import SEO from "../components/seo/seo"
+import StructuredData from "../components/structured-data/structured-data"
 import { FaSearch } from "react-icons/fa"
 
+export const Head = ({ data }) => {
+  const image = data.profile.seo_image
+    ? data.profile.seo_image.childImageSharp.resize
+    : null
+  return (
+    <>
+      <SEO title="Writing" image={image} pathname="/writing" />
+      <StructuredData />
+    </>
+  )
+}
+
 export default function Writing({ data }) {
-  const { profile, blogs } = data
+  const { blogs } = data
   const emptyQuery = ""
   const [state, setState] = useState({
     filteredData: [],
@@ -41,34 +55,25 @@ export default function Writing({ data }) {
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
   const posts = hasSearchResults ? filteredData : blogs.edges
-  const image = profile.seo_image
-    ? profile.seo_image.childImageSharp.resize
-    : null
-
   return (
-    <Layout
-      sidebarOnMobile={false}
-      title="Writing"
-      image={image}
-      pathname="/writing"
-    >
+    <Layout sidebarOnMobile={false}>
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         <header className="prose mb-6">
           <h1 className="prose">Writing</h1>
         </header>
 
         <div className="mb-6">
-          <div class="bg-back-2 text-front-text flex items-center rounded-md shadow w-full lg:w-3/5 h-10">
+          <div className="bg-back-2 text-front-text flex items-center rounded-md shadow w-full lg:w-3/5 h-10">
             <input
-              class="bg-back-2 rounded-l-full w-full h-full py-4 px-6 leading-tight focus:outline-none"
+              className="bg-back-2 rounded-l-full w-full h-full py-4 px-6 leading-tight focus:outline-none"
               id="search"
               type="text"
               placeholder="Search"
               onChange={handleSearchInput}
             />
 
-            <div class="p-4">
-              <button class="bg-front-2 text-back-2 rounded-full p-2 hover:bg-opacity-75 focus:outline-none w-full h-full flex items-center justify-center">
+            <div className="p-4">
+              <button className="bg-front-2 text-back-2 rounded-full p-2 hover:bg-opacity-75 focus:outline-none w-full h-full flex items-center justify-center">
                 <FaSearch />
               </button>
             </div>
@@ -76,9 +81,9 @@ export default function Writing({ data }) {
         </div>
 
         {posts.map(({ node }) => (
-          <div>
+          <div key={node.id}>
             <Link to={node.fields.slug}>
-              <div className="prose" key={node.id}>
+              <div className="prose">
                 <h4>
                   {node.frontmatter.title}{" "}
                   <span className="italic text-sm text-front-text">
@@ -109,7 +114,7 @@ export const query = graphql`
     profile: profileYaml {
       ...ProfileFragment
     }
-    blogs: allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogs: allMdx(sort: { frontmatter: { date: DESC } }) {
       totalCount
       edges {
         node {

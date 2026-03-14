@@ -14,7 +14,12 @@ const WorkHistory = ({ history }) => {
             className="history-entry relative w-1/2 py-4"
             key={`${company}_${i}`}
           >
-            <a href={url} target="_blank" rel="noopener noreferrer">
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${company}`}
+            >
               <span className="shadow hover:shadow-xl dot-bg w-14 h-14 absolute bg-front-4 inline-flex rounded-full items-center justify-center">
                 <span className="dot w-5 h-5 bg-front-3 rounded-full" />
               </span>

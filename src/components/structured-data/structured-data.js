@@ -1,15 +1,32 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import { arrayOf, shape, ProfileType, SocialType } from "../../types"
+import { useStaticQuery, graphql } from "gatsby"
 
-const StructuredData = ({ profile, social }) => {
+const StructuredData = () => {
+  const { profile, social } = useStaticQuery(graphql`
+    query {
+      profile: profileYaml {
+        name
+        profession
+        company
+        image {
+          publicURL
+        }
+      }
+      social: allSocialYaml(filter: { url: { ne: null } }) {
+        nodes {
+          url
+        }
+      }
+    }
+  `)
+
   const schema = {
     "@context": "http://schema.org/",
     "@type": "Person",
     name: profile.name,
     image: profile.image?.publicURL,
     jobTitle: profile.profession,
-    sameAs: social.map(item => item.url),
+    sameAs: social.nodes.map(item => item.url),
     worksFor: {
       "@type": "Organization",
       name: profile.company,
@@ -17,15 +34,8 @@ const StructuredData = ({ profile, social }) => {
   }
 
   return (
-    <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </Helmet>
+    <script type="application/ld+json">{JSON.stringify(schema)}</script>
   )
-}
-
-StructuredData.propTypes = {
-  profile: shape(ProfileType),
-  social: arrayOf(shape(SocialType)),
 }
 
 export default StructuredData

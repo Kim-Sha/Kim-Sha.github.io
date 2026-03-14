@@ -1,11 +1,11 @@
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React from "react"
 import { ProfileType } from "../../types"
 
 const ProfileImage = ({ image, name }) => (
   <div className="relative inline-block leading-none">
-    <Img
-      fixed={image.childImageSharp.fixed}
+    <GatsbyImage
+      image={getImage(image)}
       alt={name}
       className="shadow rounded-full relative z-10"
     />
