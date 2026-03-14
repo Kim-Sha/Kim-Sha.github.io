@@ -22,7 +22,7 @@ const Blogs = ({ blogs }) => {
       <h5 className="font-header font-semibold text-front-text text-sm uppercase mb-3">
         Writing
       </h5>
-      <p>
+      <div>
         <Link to={node.fields.slug}>
           <div className="prose lg:pl-2 text-xs lg:text-base w-64 md:w-full">
             <h3 className="truncate ...">
@@ -38,7 +38,7 @@ const Blogs = ({ blogs }) => {
             </p>
           </div>
         </Link>
-      </p>
+      </div>
     </div>
   )
 }

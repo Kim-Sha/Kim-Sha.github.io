@@ -63,17 +63,17 @@ export default function Writing({ data }) {
         </header>
 
         <div className="mb-6">
-          <div class="bg-back-2 text-front-text flex items-center rounded-md shadow w-full lg:w-3/5 h-10">
+          <div className="bg-back-2 text-front-text flex items-center rounded-md shadow w-full lg:w-3/5 h-10">
             <input
-              class="bg-back-2 rounded-l-full w-full h-full py-4 px-6 leading-tight focus:outline-none"
+              className="bg-back-2 rounded-l-full w-full h-full py-4 px-6 leading-tight focus:outline-none"
               id="search"
               type="text"
               placeholder="Search"
               onChange={handleSearchInput}
             />
 
-            <div class="p-4">
-              <button class="bg-front-2 text-back-2 rounded-full p-2 hover:bg-opacity-75 focus:outline-none w-full h-full flex items-center justify-center">
+            <div className="p-4">
+              <button className="bg-front-2 text-back-2 rounded-full p-2 hover:bg-opacity-75 focus:outline-none w-full h-full flex items-center justify-center">
                 <FaSearch />
               </button>
             </div>
@@ -81,9 +81,9 @@ export default function Writing({ data }) {
         </div>
 
         {posts.map(({ node }) => (
-          <div>
+          <div key={node.id}>
             <Link to={node.fields.slug}>
-              <div className="prose" key={node.id}>
+              <div className="prose">
                 <h4>
                   {node.frontmatter.title}{" "}
                   <span className="italic text-sm text-front-text">
