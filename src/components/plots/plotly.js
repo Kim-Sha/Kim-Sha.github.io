@@ -21,6 +21,8 @@ const LoadingCube = () => (
 export const LazyPlot = ({ layout, style, config, ...rest }) => {
   const { theme } = useContext(ThemeContext)
 
+  if (typeof window === "undefined") return null
+
   return (
     <Suspense fallback={<LoadingCube />}>
       <Plot
