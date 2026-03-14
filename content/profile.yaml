@@ -7,12 +7,12 @@
   seo_image: images/ksha_profile2.png
   location: New York, USA
   relocation: true
-  company: Cornell Tech
+  company: Etsy
   for_hire: true
   focus: not breaking this website
   focus_url: https://github.com/Kim-Sha
   about: |
-    Most recently a Data Science Intern at Square (Block, Inc.), I'm currently pursuing an MS in Applied Information Science at Cornell. I graduated from Princeton in 2019 with a BSE in Chemical & Biological Engineering, and was a Senior Data Scientist at CKM Analytix prior to Cornell. This website serves both as a portfolio and sandbox for me to write about data science in the context of urban technologies and sustainability.
+    Currently a Senior Operations Analyst at Etsy, I develop ML models, ETL pipelines, and evaluate new experimentation frameworks for LLM-powered launches. I hold a dual MS from Cornell and a BSE from Princeton, and have previously worked in data science at Square and CKM Analytix. My work sits at the intersection of applied ML, experimentation, and business analytics, with a recent focus on conversational AI systems and how to evaluate them.
   skills:
     - python
     - postgresql
