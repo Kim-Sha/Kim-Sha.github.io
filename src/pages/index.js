@@ -2,15 +2,26 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../templates/layout"
 import MainContent from "../components/main-content/main-content"
+import SEO from "../components/seo/seo"
+import StructuredData from "../components/structured-data/structured-data"
+
+export const Head = ({ data }) => {
+  const image = data.profile.seo_image
+    ? data.profile.seo_image.childImageSharp.resize
+    : null
+  return (
+    <>
+      <SEO image={image} />
+      <StructuredData />
+    </>
+  )
+}
 
 export default function Home({ data }) {
   const { history, profile, projects, blogs } = data
-  const image = profile.seo_image
-    ? profile.seo_image.childImageSharp.resize
-    : null
 
   return (
-    <Layout sidebarOnMobile={true} image={image}>
+    <Layout sidebarOnMobile={true}>
       <MainContent
         history={history.nodes}
         profile={profile}
@@ -36,7 +47,7 @@ export const query = graphql`
         ...ProjectFragment
       }
     }
-    blogs: allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogs: allMdx(sort: { frontmatter: { date: DESC } }) {
       totalCount
       edges {
         node {

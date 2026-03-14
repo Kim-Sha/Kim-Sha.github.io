@@ -1,24 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "./layout"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import SEO from "../components/seo/seo"
+import StructuredData from "../components/structured-data/structured-data"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { FaAngleUp } from "react-icons/fa"
 
-export default function BlogPost({ data }) {
+export default function BlogPost({ data, children }) {
   const post = data.mdx
   const { previous, next } = data
-  const image = post.frontmatter.image
-    ? post.frontmatter.image.childImageSharp.resize
-    : null
 
   return (
-    <Layout
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-      image={image}
-      pathname={post.fields.slug}
-    >
+    <Layout>
       <div className="w-full lg:w-2/3 lg:pl-8 xl:pl-12">
         <article className="prose mb-6">
           <button
@@ -31,7 +24,7 @@ export default function BlogPost({ data }) {
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
           </header>
-          <MDXRenderer>{post.body}</MDXRenderer>
+          {children}
         </article>
         <nav>
           <ul className="flex justify-between">
@@ -56,6 +49,24 @@ export default function BlogPost({ data }) {
   )
 }
 
+export const Head = ({ data }) => {
+  const post = data.mdx
+  const image = post.frontmatter.image
+    ? post.frontmatter.image.childImageSharp.resize
+    : null
+  return (
+    <>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+        image={image}
+        pathname={post.fields.slug}
+      />
+      <StructuredData />
+    </>
+  )
+}
+
 export const pageQuery = graphql`
   query BlogPostBySlug(
     $id: String!
@@ -73,7 +84,6 @@ export const pageQuery = graphql`
       }
       id
       excerpt(pruneLength: 160)
-      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

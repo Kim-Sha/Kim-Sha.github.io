@@ -2,10 +2,24 @@ import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../templates/layout"
 import ProjectTags from "../components/projects/project-tags"
+import SEO from "../components/seo/seo"
+import StructuredData from "../components/structured-data/structured-data"
 import { FaSearch } from "react-icons/fa"
 
+export const Head = ({ data }) => {
+  const image = data.profile.seo_image
+    ? data.profile.seo_image.childImageSharp.resize
+    : null
+  return (
+    <>
+      <SEO title="Writing" image={image} pathname="/writing" />
+      <StructuredData />
+    </>
+  )
+}
+
 export default function Writing({ data }) {
-  const { profile, blogs } = data
+  const { blogs } = data
   const emptyQuery = ""
   const [state, setState] = useState({
     filteredData: [],
@@ -41,17 +55,8 @@ export default function Writing({ data }) {
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
   const posts = hasSearchResults ? filteredData : blogs.edges
-  const image = profile.seo_image
-    ? profile.seo_image.childImageSharp.resize
-    : null
-
   return (
-    <Layout
-      sidebarOnMobile={false}
-      title="Writing"
-      image={image}
-      pathname="/writing"
-    >
+    <Layout sidebarOnMobile={false}>
       <div className="lg:w-2/3 lg:pl-8 xl:pl-12">
         <header className="prose mb-6">
           <h1 className="prose">Writing</h1>
@@ -109,7 +114,7 @@ export const query = graphql`
     profile: profileYaml {
       ...ProfileFragment
     }
-    blogs: allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogs: allMdx(sort: { frontmatter: { date: DESC } }) {
       totalCount
       edges {
         node {

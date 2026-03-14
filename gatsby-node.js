@@ -1,14 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    node: {
-      fs: "empty",
-    },
-  })
-}
-
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `Mdx`) {
@@ -32,7 +24,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       {
         allMdx(
-          sort: { fields: [frontmatter___date], order: ASC }
+          sort: { frontmatter: { date: ASC } }
           limit: 1000
         ) {
           nodes {
